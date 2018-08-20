@@ -1,0 +1,8 @@
+#replace `example.com` with domain
+connect-src https://example.com https://*.example.com;
+default-src https://example.com https://*.example.com;
+font-src https://example.com https://*.example.com;
+img-src data: https://example.com https://*.example.com;
+media-src https://example.com https://*.example.com;
+object-src 'none'; script-src https://example.com https://*.example.com 'unsafe-inline';
+style-src https://example.com https://*.example.com 'unsafe-inline';
