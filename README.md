@@ -1,2 +1,3 @@
-# server-config
-Config files for our Nginx server(s).
+# Textpattern Server Config
+
+Config files related to our web servers (mid-2018 onwards).
