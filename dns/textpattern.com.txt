@@ -1,5 +1,5 @@
 ﻿; Domain: textpattern.com
-; Exported (y-m-d hh:mm:ss): 2018-09-03 12:16:26
+; Exported (y-m-d hh:mm:ss): 2018-09-04 02:54:21
 ;
 ; This file is intended for use for informational and archival
 ; purposes ONLY and MUST be edited before use on a production
@@ -28,7 +28,7 @@
 
 ; SOA Record
 textpattern.com.	3600	 IN 	SOA	ns23.domaincontrol.com.	dns.jomax.net. (
-					2018090311
+					2018090403
 					28800
 					7200
 					604800
@@ -38,7 +38,6 @@ textpattern.com.	3600	 IN 	SOA	ns23.domaincontrol.com.	dns.jomax.net. (
 ; A Records
 @	3600	 IN 	A	46.101.236.252
 *	3600	 IN 	A	37.153.96.164
-docs	3600	 IN 	A	46.101.236.252
 forum	3600	 IN 	A	46.101.236.252
 rpc	3600	 IN 	A	37.153.96.164
 rpc-dev	3600	 IN 	A	46.101.236.252
@@ -46,6 +45,7 @@ tractor	3600	 IN 	A	46.101.236.252
 www	3600	 IN 	A	46.101.236.252
 
 ; CNAME Records
+docs	3600	 IN 	CNAME	textpattern.github.io.
 _domainconnect	3600	 IN 	CNAME	_domainconnect.gd.domaincontrol.com.
 
 ; MX Records
@@ -63,7 +63,6 @@ _domainconnect	3600	 IN 	CNAME	_domainconnect.gd.domaincontrol.com.
 
 ; AAAA Records
 @	3600	 IN 	AAAA	2a03:b0c0:3:d0::ce8:2001
-docs	3600	 IN 	AAAA	2a03:b0c0:3:d0::ce8:2001
 forum	3600	 IN 	AAAA	2a03:b0c0:3:d0::ce8:2001
 rpc-dev	3600	 IN 	AAAA	2a03:b0c0:3:d0::ce8:2001
 tractor	3600	 IN 	AAAA	2a03:b0c0:3:d0::ce8:2001
