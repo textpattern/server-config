@@ -1,5 +1,5 @@
 ﻿; Domain: textpattern.com
-; Exported (y-m-d hh:mm:ss): 2018-09-05 04:42:23
+; Exported (y-m-d hh:mm:ss): 2018-09-07 05:35:59
 ;
 ; This file is intended for use for informational and archival
 ; purposes ONLY and MUST be edited before use on a production
@@ -28,7 +28,7 @@
 
 ; SOA Record
 textpattern.com.	3600	 IN 	SOA	ns23.domaincontrol.com.	dns.jomax.net. (
-					2018090517
+					2018090704
 					28800
 					7200
 					604800
@@ -38,8 +38,8 @@ textpattern.com.	3600	 IN 	SOA	ns23.domaincontrol.com.	dns.jomax.net. (
 ; A Records
 @	3600	 IN 	A	46.101.236.252
 *	3600	 IN 	A	37.153.96.164
-default-theme	600	 IN 	A	46.101.236.252
-design-patterns	600	 IN 	A	46.101.236.252
+default-theme	3600	 IN 	A	46.101.236.252
+design-patterns	3600	 IN 	A	46.101.236.252
 design-patterns-4-6	600	 IN 	A	46.101.236.252
 design-patterns-4-7	600	 IN 	A	46.101.236.252
 design-patterns-classic	600	 IN 	A	46.101.236.252
@@ -65,13 +65,14 @@ _domainconnect	3600	 IN 	CNAME	_domainconnect.gd.domaincontrol.com.
 ; TXT Records
 @	3600	 IN 	TXT	"google-site-verification=yJ4FHP6mvcB7VgPjgI_qht_wwFORdGHBsqdgt6wGH1U"
 @	3600	 IN 	TXT	"v=spf1 include:_spf.google.com include:tractor.textpattern.com ~all"
+_github-challenge-textpattern.textpattern.com.	3600	 IN 	TXT	"3015308630"
 
 ; SRV Records
 
 ; AAAA Records
 @	3600	 IN 	AAAA	2a03:b0c0:3:d0::ce8:2001
-default-theme	600	 IN 	AAAA	2a03:b0c0:3:d0::ce8:2001
-design-patterns	600	 IN 	AAAA	2a03:b0c0:3:d0::ce8:2001
+default-theme	3600	 IN 	AAAA	2a03:b0c0:3:d0::ce8:2001
+design-patterns	3600	 IN 	AAAA	2a03:b0c0:3:d0::ce8:2001
 design-patterns-4-6	600	 IN 	AAAA	2a03:b0c0:3:d0::ce8:2001
 design-patterns-4-7	600	 IN 	AAAA	2a03:b0c0:3:d0::ce8:2001
 design-patterns-classic	600	 IN 	AAAA	2a03:b0c0:3:d0::ce8:2001
