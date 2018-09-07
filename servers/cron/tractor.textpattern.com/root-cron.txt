@@ -1,0 +1,1 @@
+22 3,15 * * * rm -rf /opt/eff.org/certbot/venv/ && rm -rf /opt/letsencrypt && git clone --depth 1 https://github.com/letsencrypt/letsencrypt /opt/letsencrypt && /opt/letsencrypt/letsencrypt-auto renew && systemctl reload nginx
