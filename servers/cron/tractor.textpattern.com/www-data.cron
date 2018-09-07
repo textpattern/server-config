@@ -1,0 +1,1 @@
+0,15,30,45 * * * * bash /var/www/vhosts/textpattern.com/design-patterns/staging/build.sh
