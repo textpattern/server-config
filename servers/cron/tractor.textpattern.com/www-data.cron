@@ -1,3 +1,6 @@
 0,15,30,45 * * * * bash /var/www/vhosts/textpattern.com/design-patterns/staging/build.sh
 0,15,30,45 * * * * sleep 5 && bash /var/www/vhosts/textpattern.com/design-patterns-4-6/staging/build.sh
 0,15,30,45 * * * * sleep 10 && bash /var/www/vhosts/textpattern.com/design-patterns-4-7/staging/build.sh
+0,15,30,45 * * * * sleep 15 &&bash /var/www/vhosts/textpattern.com/design-patterns-classic/staging/build.sh
+0,15,30,45 * * * * sleep 20 && bash /var/www/vhosts/textpattern.com/design-patterns-classic-4-6/staging/build.sh
+0,15,30,45 * * * * sleep 25 && bash /var/www/vhosts/textpattern.com/design-patterns-classic-4-7/staging/build.sh
