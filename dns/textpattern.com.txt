@@ -1,5 +1,5 @@
 ﻿; Domain: textpattern.com
-; Exported (y-m-d hh:mm:ss): 2018-09-09 14:24:42
+; Exported (y-m-d hh:mm:ss): 2018-10-14 11:38:06
 ;
 ; This file is intended for use for informational and archival
 ; purposes ONLY and MUST be edited before use on a production
@@ -28,7 +28,7 @@
 
 ; SOA Record
 textpattern.com.	3600	 IN 	SOA	ns23.domaincontrol.com.	dns.jomax.net. (
-					2018090706
+					2018101405
 					28800
 					7200
 					604800
@@ -40,20 +40,19 @@ textpattern.com.	3600	 IN 	SOA	ns23.domaincontrol.com.	dns.jomax.net. (
 *	3600	 IN 	A	37.153.96.164
 default-theme	3600	 IN 	A	46.101.236.252
 design-patterns	3600	 IN 	A	46.101.236.252
-design-patterns-4-6	600	 IN 	A	46.101.236.252
-design-patterns-4-7	600	 IN 	A	46.101.236.252
-design-patterns-classic	600	 IN 	A	46.101.236.252
-design-patterns-classic-4-6	600	 IN 	A	46.101.236.252
-design-patterns-classic-4-7	600	 IN 	A	46.101.236.252
+design-patterns-4-6	3600	 IN 	A	46.101.236.252
+design-patterns-4-7	3600	 IN 	A	46.101.236.252
+design-patterns-classic	3600	 IN 	A	46.101.236.252
+design-patterns-classic-4-6	3600	 IN 	A	46.101.236.252
+design-patterns-classic-4-7	3600	 IN 	A	46.101.236.252
 forum	3600	 IN 	A	46.101.236.252
-rpc	3600	 IN 	A	37.153.96.164
-rpc-dev	3600	 IN 	A	46.101.236.252
-telecom	600	 IN 	A	165.227.160.80
+rpc	3600	 IN 	A	46.101.236.252
 tractor	3600	 IN 	A	46.101.236.252
 www	3600	 IN 	A	46.101.236.252
 
 ; CNAME Records
 docs	3600	 IN 	CNAME	textpattern.github.io.
+translate	3600	 IN 	CNAME	cname.crowdin.com.
 _domainconnect	3600	 IN 	CNAME	_domainconnect.gd.domaincontrol.com.
 
 ; MX Records
@@ -64,9 +63,9 @@ _domainconnect	3600	 IN 	CNAME	_domainconnect.gd.domaincontrol.com.
 @	3600	 IN 	MX	5	alt2.aspmx.l.google.com.
 
 ; TXT Records
-@	3600	 IN 	TXT	"google-site-verification=yJ4FHP6mvcB7VgPjgI_qht_wwFORdGHBsqdgt6wGH1U"
-@	3600	 IN 	TXT	"v=spf1 include:_spf.google.com include:tractor.textpattern.com ~all"
-_github-challenge-textpattern.textpattern.com.	3600	 IN 	TXT	"3015308630"
+@	86400	 IN 	TXT	"google-site-verification=yJ4FHP6mvcB7VgPjgI_qht_wwFORdGHBsqdgt6wGH1U"
+@	86400	 IN 	TXT	"v=spf1 include:_spf.google.com include:tractor.textpattern.com ~all"
+_github-challenge-textpattern	86400	 IN 	TXT	"3015308630"
 
 ; SRV Records
 
@@ -74,14 +73,13 @@ _github-challenge-textpattern.textpattern.com.	3600	 IN 	TXT	"3015308630"
 @	3600	 IN 	AAAA	2a03:b0c0:3:d0::ce8:2001
 default-theme	3600	 IN 	AAAA	2a03:b0c0:3:d0::ce8:2001
 design-patterns	3600	 IN 	AAAA	2a03:b0c0:3:d0::ce8:2001
-design-patterns-4-6	600	 IN 	AAAA	2a03:b0c0:3:d0::ce8:2001
-design-patterns-4-7	600	 IN 	AAAA	2a03:b0c0:3:d0::ce8:2001
-design-patterns-classic	600	 IN 	AAAA	2a03:b0c0:3:d0::ce8:2001
-design-patterns-classic-4-6	600	 IN 	AAAA	2a03:b0c0:3:d0::ce8:2001
-design-patterns-classic-4-7	600	 IN 	AAAA	2a03:b0c0:3:d0::ce8:2001
+design-patterns-4-6	3600	 IN 	AAAA	2a03:b0c0:3:d0::ce8:2001
+design-patterns-4-7	3600	 IN 	AAAA	2a03:b0c0:3:d0::ce8:2001
+design-patterns-classic	3600	 IN 	AAAA	2a03:b0c0:3:d0::ce8:2001
+design-patterns-classic-4-6	3600	 IN 	AAAA	2a03:b0c0:3:d0::ce8:2001
+design-patterns-classic-4-7	3600	 IN 	AAAA	2a03:b0c0:3:d0::ce8:2001
 forum	3600	 IN 	AAAA	2a03:b0c0:3:d0::ce8:2001
-rpc-dev	3600	 IN 	AAAA	2a03:b0c0:3:d0::ce8:2001
-telecom	600	 IN 	AAAA	2a03:b0c0:3:d0::500:2001
+rpc	3600	 IN 	AAAA	2a03:b0c0:3:d0::ce8:2001
 tractor	3600	 IN 	AAAA	2a03:b0c0:3:d0::ce8:2001
 www	3600	 IN 	AAAA	2a03:b0c0:3:d0::ce8:2001
 
