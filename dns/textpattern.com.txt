@@ -1,5 +1,5 @@
 ﻿; Domain: textpattern.com
-; Exported (y-m-d hh:mm:ss): 2018-11-29 04:27:30
+; Exported (y-m-d hh:mm:ss): 2018-11-30 10:28:34
 ;
 ; This file is intended for use for informational and archival
 ; purposes ONLY and MUST be edited before use on a production
@@ -28,7 +28,7 @@
 
 ; SOA Record
 textpattern.com.	3600	 IN 	SOA	ns23.domaincontrol.com.	dns.jomax.net. (
-					2018112901
+					2018113001
 					28800
 					7200
 					604800
@@ -36,20 +36,20 @@ textpattern.com.	3600	 IN 	SOA	ns23.domaincontrol.com.	dns.jomax.net. (
 					) 
 
 ; A Records
-@	3600	 IN 	A	46.101.236.252
+@	3600	 IN 	A	46.101.158.114
 *	3600	 IN 	A	37.153.96.164
-default-theme	3600	 IN 	A	46.101.236.252
-design-patterns	3600	 IN 	A	46.101.236.252
-design-patterns-4-6	3600	 IN 	A	46.101.236.252
-design-patterns-4-7	3600	 IN 	A	46.101.236.252
-design-patterns-classic	3600	 IN 	A	46.101.236.252
-design-patterns-classic-4-6	3600	 IN 	A	46.101.236.252
-design-patterns-classic-4-7	3600	 IN 	A	46.101.236.252
-forum	3600	 IN 	A	46.101.236.252
-rpc	3600	 IN 	A	46.101.236.252
-tractor	3600	 IN 	A	46.101.236.252
+default-theme	3600	 IN 	A	46.101.158.114
+design-patterns	3600	 IN 	A	46.101.158.114
+design-patterns-4-6	3600	 IN 	A	46.101.158.114
+design-patterns-4-7	3600	 IN 	A	46.101.158.114
+design-patterns-classic	3600	 IN 	A	46.101.158.114
+design-patterns-classic-4-6	3600	 IN 	A	46.101.158.114
+design-patterns-classic-4-7	3600	 IN 	A	46.101.158.114
+forum	3600	 IN 	A	46.101.158.114
+rpc	3600	 IN 	A	46.101.158.114
+themes	3600	 IN 	A	46.101.158.114
 trident	3600	 IN 	A	46.101.158.114
-www	3600	 IN 	A	46.101.236.252
+www	3600	 IN 	A	46.101.158.114
 
 ; CNAME Records
 docs	3600	 IN 	CNAME	textpattern.github.io.
@@ -65,25 +65,25 @@ _domainconnect	3600	 IN 	CNAME	_domainconnect.gd.domaincontrol.com.
 
 ; TXT Records
 @	86400	 IN 	TXT	"google-site-verification=yJ4FHP6mvcB7VgPjgI_qht_wwFORdGHBsqdgt6wGH1U"
-@	86400	 IN 	TXT	"v=spf1 include:_spf.google.com include:tractor.textpattern.com ~all"
+@	86400	 IN 	TXT	"v=spf1 include:_spf.google.com include:trident.textpattern.com ~all"
 _github-challenge-textpattern	86400	 IN 	TXT	"3015308630"
 
 ; SRV Records
 
 ; AAAA Records
-@	3600	 IN 	AAAA	2a03:b0c0:3:d0::ce8:2001
-default-theme	3600	 IN 	AAAA	2a03:b0c0:3:d0::ce8:2001
-design-patterns	3600	 IN 	AAAA	2a03:b0c0:3:d0::ce8:2001
-design-patterns-4-6	3600	 IN 	AAAA	2a03:b0c0:3:d0::ce8:2001
-design-patterns-4-7	3600	 IN 	AAAA	2a03:b0c0:3:d0::ce8:2001
-design-patterns-classic	3600	 IN 	AAAA	2a03:b0c0:3:d0::ce8:2001
-design-patterns-classic-4-6	3600	 IN 	AAAA	2a03:b0c0:3:d0::ce8:2001
-design-patterns-classic-4-7	3600	 IN 	AAAA	2a03:b0c0:3:d0::ce8:2001
-forum	3600	 IN 	AAAA	2a03:b0c0:3:d0::ce8:2001
-rpc	3600	 IN 	AAAA	2a03:b0c0:3:d0::ce8:2001
-tractor	3600	 IN 	AAAA	2a03:b0c0:3:d0::ce8:2001
+@	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
+default-theme	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
+design-patterns	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
+design-patterns-4-6	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
+design-patterns-4-7	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
+design-patterns-classic	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
+design-patterns-classic-4-6	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
+design-patterns-classic-4-7	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
+forum	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
+rpc	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
+themes	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
 trident	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
-www	3600	 IN 	AAAA	2a03:b0c0:3:d0::ce8:2001
+www	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
 
 ; CAA Records
 
