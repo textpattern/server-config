@@ -1,5 +1,5 @@
 ﻿; Domain: textpattern.com
-; Exported (y-m-d hh:mm:ss): 2018-11-30 10:28:34
+; Exported (y-m-d hh:mm:ss): 2019-02-19 05:02:52
 ;
 ; This file is intended for use for informational and archival
 ; purposes ONLY and MUST be edited before use on a production
@@ -28,7 +28,7 @@
 
 ; SOA Record
 textpattern.com.	3600	 IN 	SOA	ns23.domaincontrol.com.	dns.jomax.net. (
-					2018113001
+					2019021903
 					28800
 					7200
 					604800
@@ -42,9 +42,11 @@ default-theme	3600	 IN 	A	46.101.158.114
 design-patterns	3600	 IN 	A	46.101.158.114
 design-patterns-4-6	3600	 IN 	A	46.101.158.114
 design-patterns-4-7	3600	 IN 	A	46.101.158.114
+design-patterns-4-8	3600	 IN 	A	46.101.158.114
 design-patterns-classic	3600	 IN 	A	46.101.158.114
 design-patterns-classic-4-6	3600	 IN 	A	46.101.158.114
 design-patterns-classic-4-7	3600	 IN 	A	46.101.158.114
+design-patterns-classic-4-8	3600	 IN 	A	46.101.158.114
 forum	3600	 IN 	A	46.101.158.114
 rpc	3600	 IN 	A	46.101.158.114
 themes	3600	 IN 	A	46.101.158.114
@@ -76,9 +78,11 @@ default-theme	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
 design-patterns	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
 design-patterns-4-6	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
 design-patterns-4-7	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
+design-patterns-4-8	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
 design-patterns-classic	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
 design-patterns-classic-4-6	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
 design-patterns-classic-4-7	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
+design-patterns-classic-4-8	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
 forum	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
 rpc	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
 themes	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
