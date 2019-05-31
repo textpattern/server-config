@@ -1,0 +1,68 @@
+﻿; Domain: textpattern.io
+; Exported (y-m-d hh:mm:ss): 2019-05-31 10:07:22
+;
+; This file is intended for use for informational and archival
+; purposes ONLY and MUST be edited before use on a production
+; DNS server.
+;
+; In particular, you must update the SOA record with the correct
+; authoritative name server and contact e-mail address information,
+; and add the correct NS records for the name servers which will
+; be authoritative for this domain.
+;
+; For further information, please consult the BIND documentation
+; located on the following website:
+;
+; http://www.isc.org/
+;
+; And RFC 1035:
+;
+; http://www.ietf.org/rfc/rfc1035.txt
+;
+; Please note that we do NOT offer technical support for any use
+; of this zone data, the BIND name server, or any other third-
+; party DNS software.
+;
+; Use at your own risk.
+
+
+; SOA Record
+textpattern.io.	3600	 IN 	SOA	ns37.domaincontrol.com.	dns.jomax.net. (
+					2019053116
+					28800
+					7200
+					604800
+					3600
+					) 
+
+; A Records
+@	3600	 IN 	A	46.101.158.114
+docs	3600	 IN 	A	46.101.158.114
+forum	3600	 IN 	A	46.101.158.114
+www	3600	 IN 	A	46.101.158.114
+
+; CNAME Records
+email	3600	 IN 	CNAME	email.secureserver.net.
+translate	3600	 IN 	CNAME	translate.textpattern.com.
+_domainconnect	3600	 IN 	CNAME	_domainconnect.gd.domaincontrol.com.
+
+; MX Records
+@	3600	 IN 	MX	0	smtp.secureserver.net.
+@	3600	 IN 	MX	10	mailstore1.secureserver.net.
+
+; TXT Records
+
+; SRV Records
+
+; AAAA Records
+@	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
+docs	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
+forum	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
+www	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
+
+; CAA Records
+
+; NS Records
+@	3600	 IN 	NS	ns37.domaincontrol.com.
+@	3600	 IN 	NS	ns38.domaincontrol.com.
+
