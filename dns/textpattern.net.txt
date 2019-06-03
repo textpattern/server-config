@@ -1,5 +1,5 @@
 ﻿; Domain: textpattern.net
-; Exported (y-m-d hh:mm:ss): 2018-09-09 14:25:03
+; Exported (y-m-d hh:mm:ss): 2019-06-03 04:49:13
 ;
 ; This file is intended for use for informational and archival
 ; purposes ONLY and MUST be edited before use on a production
@@ -28,19 +28,18 @@
 
 ; SOA Record
 textpattern.net.	3600	 IN 	SOA	ns23.domaincontrol.com.	dns.jomax.net. (
-    2018082002
-    28800
-    7200
-    604800
-    3600
-    ) 
+					2019060304
+					28800
+					7200
+					604800
+					3600
+					) 
 
 ; A Records
-@	3600	 IN 	A	46.101.236.252
-www	3600	 IN 	A	46.101.236.252
+@	3600	 IN 	A	46.101.158.114
+www	3600	 IN 	A	46.101.158.114
 
 ; CNAME Records
-_domainconnect	3600	 IN 	CNAME	_domainconnect.gd.domaincontrol.com.
 
 ; MX Records
 
@@ -49,11 +48,16 @@ _domainconnect	3600	 IN 	CNAME	_domainconnect.gd.domaincontrol.com.
 ; SRV Records
 
 ; AAAA Records
-@	3600	 IN 	AAAA	2a03:b0c0:3:d0::ce8:2001
-www	3600	 IN 	AAAA	2a03:b0c0:3:d0::ce8:2001
+@	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
+www	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
 
 ; CAA Records
+@	3600	 IN 	CAA	0	issue	"letcencrypt.org"
+@	3600	 IN 	CAA	0	issuewild	"letcencrypt.org"
+www	3600	 IN 	CAA	0	issue	"letcencrypt.org"
+www	3600	 IN 	CAA	0	issuewild	";"
 
 ; NS Records
 @	3600	 IN 	NS	ns23.domaincontrol.com.
 @	3600	 IN 	NS	ns24.domaincontrol.com.
+
