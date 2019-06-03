@@ -1,5 +1,5 @@
 ﻿; Domain: textpattern.io
-; Exported (y-m-d hh:mm:ss): 2019-05-31 10:07:22
+; Exported (y-m-d hh:mm:ss): 2019-06-03 04:47:18
 ;
 ; This file is intended for use for informational and archival
 ; purposes ONLY and MUST be edited before use on a production
@@ -28,7 +28,7 @@
 
 ; SOA Record
 textpattern.io.	3600	 IN 	SOA	ns37.domaincontrol.com.	dns.jomax.net. (
-					2019053116
+					2019060302
 					28800
 					7200
 					604800
@@ -42,9 +42,7 @@ forum	3600	 IN 	A	46.101.158.114
 www	3600	 IN 	A	46.101.158.114
 
 ; CNAME Records
-email	3600	 IN 	CNAME	email.secureserver.net.
 translate	3600	 IN 	CNAME	translate.textpattern.com.
-_domainconnect	3600	 IN 	CNAME	_domainconnect.gd.domaincontrol.com.
 
 ; MX Records
 @	3600	 IN 	MX	0	smtp.secureserver.net.
