@@ -1,5 +1,5 @@
 ﻿; Domain: textpattern.com
-; Exported (y-m-d hh:mm:ss): 2019-06-01 09:39:19
+; Exported (y-m-d hh:mm:ss): 2019-06-03 04:46:41
 ;
 ; This file is intended for use for informational and archival
 ; purposes ONLY and MUST be edited before use on a production
@@ -28,7 +28,7 @@
 
 ; SOA Record
 textpattern.com.	3600	 IN 	SOA	ns23.domaincontrol.com.	dns.jomax.net. (
-					2019060101
+					2019060300
 					28800
 					7200
 					604800
@@ -58,7 +58,6 @@ www	3600	 IN 	A	46.101.158.114
 ; CNAME Records
 docs	3600	 IN 	CNAME	textpattern.github.io.
 translate	3600	 IN 	CNAME	cname.crowdin.com.
-_domainconnect	3600	 IN 	CNAME	_domainconnect.gd.domaincontrol.com.
 
 ; MX Records
 @	3600	 IN 	MX	1	aspmx.l.google.com.
