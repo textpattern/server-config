@@ -1,1 +1,8 @@
-22 3,15 * * * rm -rf /opt/eff.org/certbot/venv/ && rm -rf /opt/letsencrypt && git clone --depth 1 https://github.com/letsencrypt/letsencrypt /opt/letsencrypt && /opt/letsencrypt/letsencrypt-auto renew && systemctl reload nginx
+44 18 * * * bash /usr/libexec/netdata-updater.sh && /opt/letsencrypt/letsencrypt-auto renew && systemctl reload nginx
+13 8 * * * /etc/phpbu/phpbu.phar --configuration=/var/www/vhosts/textile-lang.com/www/backups/www.textile-lang.com-phpbu-config-daily.xml
+15 11 * * * /etc/phpbu/phpbu.phar --configuration=/var/www/vhosts/textpattern.com/www/backups/www.textpattern.com-phpbu-config-daily.xml
+43 * * * * /etc/phpbu/phpbu.phar --configuration=/var/www/vhosts/textpattern.com/forum/backups/forum.textpattern.com-phpbu-config-hourly.xml
+45 5 * * * /etc/phpbu/phpbu.phar --configuration=/var/www/vhosts/textpattern.com/forum/backups/forum.textpattern.com-phpbu-config-daily.xml
+19 18 * * * /etc/phpbu/phpbu.phar --configuration=/var/www/vhosts/textpattern.com/rpc/backups/rpc.textpattern.com-phpbu-config-daily.xml
+36 1 * * * /etc/phpbu/phpbu.phar --configuration=/var/www/vhosts/textpattern.org/www/backups/www.textpattern.org-phpbu-config-daily.xml
+37 12 * * * /etc/phpbu/phpbu.phar --configuration=/var/www/vhosts/txpmag.com/www/backups/www.txpmag.com-phpbu-config-daily.xml
