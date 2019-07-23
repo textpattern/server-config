@@ -1,5 +1,5 @@
 ﻿; Domain: textpattern.com
-; Exported (y-m-d hh:mm:ss): 2019-06-03 06:13:16
+; Exported (y-m-d hh:mm:ss): 2019-07-23 07:49:16
 ;
 ; This file is intended for use for informational and archival
 ; purposes ONLY and MUST be edited before use on a production
@@ -28,7 +28,7 @@
 
 ; SOA Record
 textpattern.com.	3600	 IN 	SOA	ns23.domaincontrol.com.	dns.jomax.net. (
-					2019060302
+					2019072302
 					28800
 					7200
 					604800
@@ -92,6 +92,36 @@ trident	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
 www	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
 
 ; CAA Records
+@	3600	 IN 	CAA	0	issue	"letsencrypt.org"
+@	3600	 IN 	CAA	0	issuewild	";"
+default-theme	3600	 IN 	CAA	0	issue	"letsencrypt.org"
+default-theme	3600	 IN 	CAA	0	issuewild	";"
+design-patterns	3600	 IN 	CAA	0	issue	"letsencrypt.org"
+design-patterns	3600	 IN 	CAA	0	issuewild	";"
+design-patterns-4-6	3600	 IN 	CAA	0	issue	"letsencrypt.org"
+design-patterns-4-6	3600	 IN 	CAA	0	issuewild	";"
+design-patterns-4-7	3600	 IN 	CAA	0	issue	"letsencrypt.org"
+design-patterns-4-7	3600	 IN 	CAA	0	issuewild	";"
+design-patterns-4-8	3600	 IN 	CAA	0	issue	"letsencrypt.org"
+design-patterns-4-8	3600	 IN 	CAA	0	issuewild	";"
+design-patterns-classic-4-6	3600	 IN 	CAA	0	issue	"letsencrypt.org"
+design-patterns-classic-4-6	3600	 IN 	CAA	0	issuewild	";"
+design-patterns-classic-4-7	3600	 IN 	CAA	0	issue	"letsencrypt.org"
+design-patterns-classic-4-7	3600	 IN 	CAA	0	issuewild	";"
+design-patterns-classic-4-8	3600	 IN 	CAA	0	issue	"letsencrypt.org"
+design-patterns-classic-4-8	3600	 IN 	CAA	0	issuewild	";"
+forum	3600	 IN 	CAA	0	issue	"letsencrypt.org"
+forum	3600	 IN 	CAA	0	issuewild	";"
+plugins	3600	 IN 	CAA	0	issue	"letsencrypt.org"
+plugins	3600	 IN 	CAA	0	issuewild	";"
+rpc	3600	 IN 	CAA	0	issue	"letsencrypt.org"
+rpc	3600	 IN 	CAA	0	issuewild	";"
+themes	3600	 IN 	CAA	0	issue	"letsencrypt.org"
+themes	3600	 IN 	CAA	0	issuewild	";"
+trident	3600	 IN 	CAA	0	issue	"letsencrypt.org"
+trident	3600	 IN 	CAA	0	issuewild	";"
+www	3600	 IN 	CAA	0	issue	"letsencrypt.org"
+www	3600	 IN 	CAA	0	issuewild	";"
 
 ; NS Records
 @	3600	 IN 	NS	ns23.domaincontrol.com.
