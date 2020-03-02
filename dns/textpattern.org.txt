@@ -1,5 +1,5 @@
 ﻿; Domain: textpattern.org
-; Exported (y-m-d hh:mm:ss): 2019-06-03 05:05:27
+; Exported (y-m-d hh:mm:ss): 2020-03-02 07:27:54
 ;
 ; This file is intended for use for informational and archival
 ; purposes ONLY and MUST be edited before use on a production
@@ -28,7 +28,7 @@
 
 ; SOA Record
 textpattern.org.	3600	 IN 	SOA	ns23.domaincontrol.com.	dns.jomax.net. (
-					2019060303
+					2020030200
 					28800
 					7200
 					604800
@@ -44,6 +44,7 @@ www	3600	 IN 	A	46.101.158.114
 ; MX Records
 
 ; TXT Records
+@	3600	 IN 	TXT	"v=spf1 include:trident.textpattern.com ~all"
 
 ; SRV Records
 
