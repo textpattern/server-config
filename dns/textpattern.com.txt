@@ -1,5 +1,5 @@
 ﻿; Domain: textpattern.com
-; Exported (y-m-d hh:mm:ss): 2019-07-23 07:49:16
+; Exported (y-m-d hh:mm:ss): 2020-06-22 04:37:25
 ;
 ; This file is intended for use for informational and archival
 ; purposes ONLY and MUST be edited before use on a production
@@ -28,7 +28,7 @@
 
 ; SOA Record
 textpattern.com.	3600	 IN 	SOA	ns23.domaincontrol.com.	dns.jomax.net. (
-					2019072302
+					2020062205
 					28800
 					7200
 					604800
@@ -43,10 +43,12 @@ design-patterns	3600	 IN 	A	46.101.158.114
 design-patterns-4-6	3600	 IN 	A	46.101.158.114
 design-patterns-4-7	3600	 IN 	A	46.101.158.114
 design-patterns-4-8	3600	 IN 	A	46.101.158.114
+design-patterns-4-9	3600	 IN 	A	46.101.158.114
 design-patterns-classic	3600	 IN 	A	46.101.158.114
 design-patterns-classic-4-6	3600	 IN 	A	46.101.158.114
 design-patterns-classic-4-7	3600	 IN 	A	46.101.158.114
 design-patterns-classic-4-8	3600	 IN 	A	46.101.158.114
+design-patterns-classic-4-9	3600	 IN 	A	46.101.158.114
 forum	3600	 IN 	A	46.101.158.114
 plugins	3600	 IN 	A	46.101.158.114
 rpc	3600	 IN 	A	46.101.158.114
@@ -80,10 +82,12 @@ design-patterns	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
 design-patterns-4-6	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
 design-patterns-4-7	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
 design-patterns-4-8	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
+design-patterns-4-9	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
 design-patterns-classic	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
 design-patterns-classic-4-6	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
 design-patterns-classic-4-7	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
 design-patterns-classic-4-8	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
+design-patterns-classic-4-9	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
 forum	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
 plugins	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
 rpc	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
@@ -104,12 +108,16 @@ design-patterns-4-7	3600	 IN 	CAA	0	issue	"letsencrypt.org"
 design-patterns-4-7	3600	 IN 	CAA	0	issuewild	";"
 design-patterns-4-8	3600	 IN 	CAA	0	issue	"letsencrypt.org"
 design-patterns-4-8	3600	 IN 	CAA	0	issuewild	";"
+design-patterns-4-9	3600	 IN 	CAA	0	issuewild	";"
+design-patterns-4-9	3600	 IN 	CAA	0	issue	"letsencrypt.org"
 design-patterns-classic-4-6	3600	 IN 	CAA	0	issue	"letsencrypt.org"
 design-patterns-classic-4-6	3600	 IN 	CAA	0	issuewild	";"
 design-patterns-classic-4-7	3600	 IN 	CAA	0	issue	"letsencrypt.org"
 design-patterns-classic-4-7	3600	 IN 	CAA	0	issuewild	";"
 design-patterns-classic-4-8	3600	 IN 	CAA	0	issue	"letsencrypt.org"
 design-patterns-classic-4-8	3600	 IN 	CAA	0	issuewild	";"
+design-patterns-classic-4-9	3600	 IN 	CAA	0	issue	"letsencrypt.org"
+design-patterns-classic-4-9	3600	 IN 	CAA	0	issuewild	";"
 forum	3600	 IN 	CAA	0	issue	"letsencrypt.org"
 forum	3600	 IN 	CAA	0	issuewild	";"
 plugins	3600	 IN 	CAA	0	issue	"letsencrypt.org"
