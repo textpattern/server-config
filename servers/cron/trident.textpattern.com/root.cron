@@ -1,10 +1,11 @@
 44 18 * * * bash /usr/libexec/netdata-updater.sh
-33 3 * * * /opt/letsencrypt/letsencrypt-auto renew && systemctl reload nginx
+33 3 * * * /opt/certbot/certbot-auto renew && systemctl reload nginx
 13 6 * * * /usr/local/bin/php73 /etc/phpbu/phpbu.phar --configuration=/var/www/vhosts/textile-lang.com/www/backups/www.textile-lang.com-phpbu-config-daily.xml
 15 3 * * * /usr/local/bin/php73 /etc/phpbu/phpbu.phar --configuration=/var/www/vhosts/textpattern.com/www/backups/www.textpattern.com-phpbu-config-daily.xml
 43 * * * * /usr/local/bin/php73 /etc/phpbu/phpbu.phar --configuration=/var/www/vhosts/textpattern.com/forum/backups/forum.textpattern.com-phpbu-config-hourly.xml
-45 5 * * * /usr/local/bin/php73 /etc/phpbu/phpbu.phar --configuration=/var/www/vhosts/textpattern.com/forum/backups/forum.textpattern.com-phpbu-config-daily.xml
+45 2 * * * /usr/local/bin/php73 /etc/phpbu/phpbu.phar --configuration=/var/www/vhosts/textpattern.com/forum/backups/forum.textpattern.com-phpbu-config-daily.xml
 19 4 * * * /usr/local/bin/php73 /etc/phpbu/phpbu.phar --configuration=/var/www/vhosts/textpattern.com/rpc/backups/rpc.textpattern.com-phpbu-config-daily.xml
 36 1 * * * /usr/local/bin/php73 /etc/phpbu/phpbu.phar --configuration=/var/www/vhosts/textpattern.org/www/backups/www.textpattern.org-phpbu-config-daily.xml
 37 2 * * * /usr/local/bin/php73 /etc/phpbu/phpbu.phar --configuration=/var/www/vhosts/txpmag.com/www/backups/www.txpmag.com-phpbu-config-daily.xml
-55 23 * * * curl --remote-name --time-cond /etc/php/shared/openssl/certs/mozillacacert.pem https://curl.haxx.se/ca/cacert.pem && chmod 755 /etc/php/shared/openssl/certs/mozillacacert.pem
+55 23 * * * curl --remote-name --time-cond /etc/php/shared/certs/mozillacacert.pem https://curl.haxx.se/ca/cacert.pem && chmod 755 /etc/php/shared/certs/mozillacacert.pem
+*/5 * * * * sleep 10 && bash /opt/php/php73/phpfpm73restartifdown.sh
