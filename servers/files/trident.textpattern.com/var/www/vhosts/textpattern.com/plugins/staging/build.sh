@@ -3,14 +3,13 @@
 
 ### dirs are absolute and mUsT hAvE TrAiLiNg SlAsHeS oR ElSe
 repo_url="https://github.com/textpattern/textpattern-curated-plugins-list"
-repo_branch="master"
 repo_parent_dir="/var/www/vhosts/textpattern.com/plugins/staging/"
-repo_source_dir="/var/www/vhosts/textpattern.com/plugins/staging/_github/library-of-plugins/"
+repo_source_dir="/var/www/vhosts/textpattern.com/plugins/staging/_github-master/library-of-plugins/"
 web_target_dir="/var/www/vhosts/textpattern.com/plugins/live/library-of-plugins/"
 
-rm -rf $repo_parent_dir/_github-$repo_branch
-git clone --branch '$repo_branch' --depth 1 --single-branch $repo_url.git $repo_parent_dir/_github-$repo_branch
-if [ -f $repo_parent_dir/_github-$repo_branch/README.md ]; then
+rm -rf $repo_parent_dir/_github-master
+git clone --branch 'master' --depth 1 --single-branch $repo_url.git $repo_parent_dir/_github-master
+if [ -f $repo_parent_dir/_github-master/README.md ]; then
 rm -rf $web_target_dir \
 && mkdir -p $web_target_dir \
 && mv $repo_source_dir* $web_target_dir \
