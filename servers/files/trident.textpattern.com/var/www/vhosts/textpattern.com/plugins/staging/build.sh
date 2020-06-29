@@ -14,6 +14,3 @@ mv /var/www/vhosts/textpattern.com/plugins/staging/_github/textpattern-curated-p
 chown -R www-data:www-data /var/www/vhosts/textpattern.com/plugins/live/library-of-plugins/
 chmod -R 775 /var/www/vhosts/textpattern.com/plugins/live/library-of-plugins/
 rm -rf /var/www/vhosts/textpattern.com/plugins/staging/_github
-
-### done
-exit
