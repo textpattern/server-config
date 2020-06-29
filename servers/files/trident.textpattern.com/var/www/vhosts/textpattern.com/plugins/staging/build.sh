@@ -8,7 +8,7 @@ git clone --branch 'master' --depth 1 --single-branch https://github.com/textpat
 ### drop it (in) like it's hot
 rm -rf /var/www/vhosts/textpattern.com/plugins/live/curated-plugins-list/
 mkdir -p /var/www/vhosts/textpattern.com/plugins/live/curated-plugins-list/
-mv /var/www/vhosts/textpattern.com/plugins/staging/_github/* /var/www/vhosts/textpattern.com/plugins/live/curated-plugins-list/
+mv /var/www/vhosts/textpattern.com/plugins/staging/_github/library-of-plugins/* /var/www/vhosts/textpattern.com/plugins/live/curated-plugins-list/
 
 ### mop up
 chown -R www-data:www-data /var/www/vhosts/textpattern.com/plugins/live/curated-plugins-list/
