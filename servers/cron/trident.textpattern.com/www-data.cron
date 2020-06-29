@@ -8,5 +8,4 @@
 0,30 * * * * sleep 40 && bash /var/www/vhosts/textpattern.com/design-patterns-classic-4-7/staging/build.sh
 0,30 * * * * sleep 45 && bash /var/www/vhosts/textpattern.com/design-patterns-classic-4-8/staging/build.sh
 0,30 * * * * sleep 50 && bash /var/www/vhosts/textpattern.com/design-patterns-classic-4-9/staging/build.sh
-15,45 * * * * bash /var/www/vhosts/textpattern.com/plugins/staging/build.sh
 2,12,22,32,42,52 * * * * rm -f /var/www/vhosts/textpattern.com/forum/live/cache/*.php
