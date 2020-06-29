@@ -14,6 +14,3 @@ mv /var/www/vhosts/textpattern.com/design-patterns-classic-4-6/staging/_github/m
 ### mop up
 chown -R www-data:www-data /var/www/vhosts/textpattern.com/design-patterns-classic-4-6/live/
 chmod -R 755 /var/www/vhosts/textpattern.com/design-patterns-classic-4-6/live/
-
-### done
-exit
