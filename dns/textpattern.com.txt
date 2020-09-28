@@ -1,5 +1,5 @@
 ﻿; Domain: textpattern.com
-; Exported (y-m-d hh:mm:ss): 2020-07-13 04:20:21
+; Exported (y-m-d hh:mm:ss): 2020-09-28 02:10:13
 ;
 ; This file is intended for use for informational and archival
 ; purposes ONLY and MUST be edited before use on a production
@@ -28,7 +28,7 @@
 
 ; SOA Record
 textpattern.com.	3600	 IN 	SOA	ns23.domaincontrol.com.	dns.jomax.net. (
-					2020071303
+					2020092812
 					28800
 					7200
 					604800
@@ -57,8 +57,13 @@ trident	86400	 IN 	A	46.101.158.114
 www	86400	 IN 	A	46.101.158.114
 
 ; CNAME Records
+18758885	3600	 IN 	CNAME	sendgrid.net.
 docs	86400	 IN 	CNAME	textpattern.github.io.
+em7422	3600	 IN 	CNAME	u18758885.wl136.sendgrid.net.
+s1._domainkey	3600	 IN 	CNAME	s1.domainkey.u18758885.wl136.sendgrid.net.
+s2._domainkey	3600	 IN 	CNAME	s2.domainkey.u18758885.wl136.sendgrid.net.
 translate	86400	 IN 	CNAME	cname.crowdin.com.
+url768	3600	 IN 	CNAME	sendgrid.net.
 
 ; MX Records
 @	86400	 IN 	MX	1	aspmx.l.google.com.
@@ -68,6 +73,7 @@ translate	86400	 IN 	CNAME	cname.crowdin.com.
 @	86400	 IN 	MX	5	alt2.aspmx.l.google.com.
 
 ; TXT Records
+@	86400	 IN 	TXT	"google-site-verification=0UDOZb1cCi07LimS-owtK7C7HEt6uqMUF4gZXVinZC0"
 @	86400	 IN 	TXT	"google-site-verification=yJ4FHP6mvcB7VgPjgI_qht_wwFORdGHBsqdgt6wGH1U"
 @	86400	 IN 	TXT	"v=spf1 include:_spf.google.com include:trident.textpattern.com ~all"
 _github-challenge-textpattern	86400	 IN 	TXT	"3015308630"
