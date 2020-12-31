@@ -1,5 +1,5 @@
 ﻿; Domain: textpattern.io
-; Exported (y-m-d hh:mm:ss): 2019-06-03 05:01:39
+; Exported (y-m-d hh:mm:ss): 2020-12-31 08:06:30
 ;
 ; This file is intended for use for informational and archival
 ; purposes ONLY and MUST be edited before use on a production
@@ -26,9 +26,11 @@
 ; Use at your own risk.
 
 
+$ORIGIN textpattern.io.
+
 ; SOA Record
-textpattern.io.	3600	 IN 	SOA	ns37.domaincontrol.com.	dns.jomax.net. (
-					2019060310
+@	3600	 IN 	SOA	ns37.domaincontrol.com.	dns.jomax.net. (
+					2020123101
 					28800
 					7200
 					604800
@@ -36,27 +38,27 @@ textpattern.io.	3600	 IN 	SOA	ns37.domaincontrol.com.	dns.jomax.net. (
 					) 
 
 ; A Records
-@	3600	 IN 	A	46.101.158.114
-docs	3600	 IN 	A	46.101.158.114
-forum	3600	 IN 	A	46.101.158.114
-www	3600	 IN 	A	46.101.158.114
+@	86400	 IN 	A	46.101.158.114
+docs	86400	 IN 	A	46.101.158.114
+forum	1800	 IN 	A	46.101.24.153
+www	86400	 IN 	A	46.101.158.114
 
 ; CNAME Records
-translate	3600	 IN 	CNAME	translate.textpattern.com.
+translate	86400	 IN 	CNAME	translate.textpattern.com.
 
 ; MX Records
-@	3600	 IN 	MX	0	smtp.secureserver.net.
-@	3600	 IN 	MX	10	mailstore1.secureserver.net.
+@	86400	 IN 	MX	0	smtp.secureserver.net.
+@	86400	 IN 	MX	10	mailstore1.secureserver.net.
 
 ; TXT Records
 
 ; SRV Records
 
 ; AAAA Records
-@	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
-docs	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
-forum	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
-www	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
+@	86400	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
+docs	86400	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
+forum	86400	 IN 	AAAA	2a03:b0c0:1:d0::510:8001
+www	86400	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
 
 ; CAA Records
 @	3600	 IN 	CAA	0	issue	"letsencrypt.org"
