@@ -1,5 +1,5 @@
 ﻿; Domain: textpattern.org
-; Exported (y-m-d hh:mm:ss): 2020-03-02 07:27:54
+; Exported (y-m-d hh:mm:ss): 2021-02-08 12:14:28
 ;
 ; This file is intended for use for informational and archival
 ; purposes ONLY and MUST be edited before use on a production
@@ -26,9 +26,11 @@
 ; Use at your own risk.
 
 
+$ORIGIN textpattern.org.
+
 ; SOA Record
-textpattern.org.	3600	 IN 	SOA	ns23.domaincontrol.com.	dns.jomax.net. (
-					2020030200
+@	3600	 IN 	SOA	ns23.domaincontrol.com.	dns.jomax.net. (
+					2021020804
 					28800
 					7200
 					604800
@@ -36,21 +38,21 @@ textpattern.org.	3600	 IN 	SOA	ns23.domaincontrol.com.	dns.jomax.net. (
 					) 
 
 ; A Records
-@	3600	 IN 	A	46.101.158.114
-www	3600	 IN 	A	46.101.158.114
+@	86400	 IN 	A	188.166.20.212
+www	86400	 IN 	A	188.166.20.212
 
 ; CNAME Records
 
 ; MX Records
 
 ; TXT Records
-@	3600	 IN 	TXT	"v=spf1 include:trident.textpattern.com ~all"
+@	86400	 IN 	TXT	"v=spf1 include:trumpet.textpattern.com ~all"
 
 ; SRV Records
 
 ; AAAA Records
-@	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
-www	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
+@	86400	 IN 	AAAA	2a03:b0c0:2:d0::e81:7001
+www	86400	 IN 	AAAA	2a03:b0c0:2:d0::e81:7001
 
 ; CAA Records
 @	3600	 IN 	CAA	0	issue	"letsencrypt.org"
