@@ -1,5 +1,5 @@
 ﻿; Domain: textpattern.com
-; Exported (y-m-d hh:mm:ss): 2021-01-04 12:02:17
+; Exported (y-m-d hh:mm:ss): 2021-02-15 07:10:04
 ;
 ; This file is intended for use for informational and archival
 ; purposes ONLY and MUST be edited before use on a production
@@ -30,7 +30,7 @@ $ORIGIN textpattern.com.
 
 ; SOA Record
 @	3600	 IN 	SOA	ns23.domaincontrol.com.	dns.jomax.net. (
-					2021010414
+					2021021533
 					28800
 					7200
 					604800
@@ -38,18 +38,9 @@ $ORIGIN textpattern.com.
 					) 
 
 ; A Records
-@	3600	 IN 	A	46.101.158.114
+@	3600	 IN 	A	188.166.20.212
 *	86400	 IN 	A	46.101.158.114
 design-patterns	86400	 IN 	A	46.101.158.114
-design-patterns-4-6	86400	 IN 	A	46.101.158.114
-design-patterns-4-7	86400	 IN 	A	46.101.158.114
-design-patterns-4-8	86400	 IN 	A	46.101.158.114
-design-patterns-4-9	86400	 IN 	A	46.101.158.114
-design-patterns-classic	86400	 IN 	A	46.101.158.114
-design-patterns-classic-4-6	86400	 IN 	A	46.101.158.114
-design-patterns-classic-4-7	86400	 IN 	A	46.101.158.114
-design-patterns-classic-4-8	86400	 IN 	A	46.101.158.114
-design-patterns-classic-4-9	86400	 IN 	A	46.101.158.114
 forum	1800	 IN 	A	46.101.158.114
 plugins	1800	 IN 	A	46.101.24.153
 rpc	1800	 IN 	A	165.227.172.95
@@ -58,7 +49,7 @@ tonight	3600	 IN 	A	165.227.172.95
 tribune	3600	 IN 	A	46.101.24.153
 trident	86400	 IN 	A	46.101.158.114
 trumpet	3600	 IN 	A	188.166.20.212
-www	3600	 IN 	A	46.101.158.114
+www	3600	 IN 	A	188.166.20.212
 
 ; CNAME Records
 18758885	3600	 IN 	CNAME	sendgrid.net.
@@ -79,24 +70,15 @@ url768	3600	 IN 	CNAME	sendgrid.net.
 ; TXT Records
 @	86400	 IN 	TXT	"google-site-verification=0UDOZb1cCi07LimS-owtK7C7HEt6uqMUF4gZXVinZC0"
 @	86400	 IN 	TXT	"google-site-verification=yJ4FHP6mvcB7VgPjgI_qht_wwFORdGHBsqdgt6wGH1U"
-@	86400	 IN 	TXT	"v=spf1 a mx a:tribune.textpattern.com include:_spf.google.com include:tonight.textpattern.com include:trident.textpattern.com ~all"
+@	86400	 IN 	TXT	"v=spf1 a mx a:tribune.textpattern.com include:_spf.google.com include:tonight.textpattern.com include:trident.textpattern.com include:trumpet.textpattern.com ~all"
 _github-challenge-textpattern	86400	 IN 	TXT	"3015308630"
 
 ; SRV Records
 
 ; AAAA Records
-@	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
+@	3600	 IN 	AAAA	2a03:b0c0:2:d0::e81:7001
 *	86400	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
 design-patterns	86400	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
-design-patterns-4-6	86400	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
-design-patterns-4-7	86400	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
-design-patterns-4-8	86400	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
-design-patterns-4-9	86400	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
-design-patterns-classic	86400	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
-design-patterns-classic-4-6	86400	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
-design-patterns-classic-4-7	86400	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
-design-patterns-classic-4-8	86400	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
-design-patterns-classic-4-9	86400	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
 forum	86400	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
 jekyll	86400	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
 plugins	1800	 IN 	AAAA	2a03:b0c0:1:d0::510:8001
@@ -106,29 +88,13 @@ tonight	3600	 IN 	AAAA	2a03:b0c0:3:d0::1111:2001
 tribune	3600	 IN 	AAAA	2a03:b0c0:1:d0::510:8001
 trident	86400	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
 trumpet	3600	 IN 	AAAA	2a03:b0c0:2:d0::e81:7001
-www	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
+www	3600	 IN 	AAAA	2a03:b0c0:2:d0::e81:7001
 
 ; CAA Records
 @	3600	 IN 	CAA	0	issue	"letsencrypt.org"
 @	3600	 IN 	CAA	0	issuewild	";"
 design-patterns	3600	 IN 	CAA	0	issue	"letsencrypt.org"
 design-patterns	3600	 IN 	CAA	0	issuewild	";"
-design-patterns-4-6	3600	 IN 	CAA	0	issue	"letsencrypt.org"
-design-patterns-4-6	3600	 IN 	CAA	0	issuewild	";"
-design-patterns-4-7	3600	 IN 	CAA	0	issue	"letsencrypt.org"
-design-patterns-4-7	3600	 IN 	CAA	0	issuewild	";"
-design-patterns-4-8	3600	 IN 	CAA	0	issue	"letsencrypt.org"
-design-patterns-4-8	3600	 IN 	CAA	0	issuewild	";"
-design-patterns-4-9	3600	 IN 	CAA	0	issuewild	";"
-design-patterns-4-9	3600	 IN 	CAA	0	issue	"letsencrypt.org"
-design-patterns-classic-4-6	3600	 IN 	CAA	0	issue	"letsencrypt.org"
-design-patterns-classic-4-6	3600	 IN 	CAA	0	issuewild	";"
-design-patterns-classic-4-7	3600	 IN 	CAA	0	issue	"letsencrypt.org"
-design-patterns-classic-4-7	3600	 IN 	CAA	0	issuewild	";"
-design-patterns-classic-4-8	3600	 IN 	CAA	0	issue	"letsencrypt.org"
-design-patterns-classic-4-8	3600	 IN 	CAA	0	issuewild	";"
-design-patterns-classic-4-9	3600	 IN 	CAA	0	issue	"letsencrypt.org"
-design-patterns-classic-4-9	3600	 IN 	CAA	0	issuewild	";"
 forum	3600	 IN 	CAA	0	issue	"letsencrypt.org"
 forum	3600	 IN 	CAA	0	issuewild	";"
 plugins	3600	 IN 	CAA	0	issue	"letsencrypt.org"
