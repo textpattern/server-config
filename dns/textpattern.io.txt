@@ -1,5 +1,5 @@
 ﻿; Domain: textpattern.io
-; Exported (y-m-d hh:mm:ss): 2020-12-31 08:06:30
+; Exported (y-m-d hh:mm:ss): 2021-02-16 03:35:24
 ;
 ; This file is intended for use for informational and archival
 ; purposes ONLY and MUST be edited before use on a production
@@ -30,7 +30,7 @@ $ORIGIN textpattern.io.
 
 ; SOA Record
 @	3600	 IN 	SOA	ns37.domaincontrol.com.	dns.jomax.net. (
-					2020123101
+					2021021608
 					28800
 					7200
 					604800
@@ -38,27 +38,25 @@ $ORIGIN textpattern.io.
 					) 
 
 ; A Records
-@	86400	 IN 	A	46.101.158.114
+@	86400	 IN 	A	188.166.20.212
 docs	86400	 IN 	A	46.101.158.114
 forum	1800	 IN 	A	46.101.24.153
-www	86400	 IN 	A	46.101.158.114
+www	86400	 IN 	A	188.166.20.212
 
 ; CNAME Records
 translate	86400	 IN 	CNAME	translate.textpattern.com.
 
 ; MX Records
-@	86400	 IN 	MX	0	smtp.secureserver.net.
-@	86400	 IN 	MX	10	mailstore1.secureserver.net.
 
 ; TXT Records
 
 ; SRV Records
 
 ; AAAA Records
-@	86400	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
+@	86400	 IN 	AAAA	2a03:b0c0:2:d0::e81:7001
 docs	86400	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
 forum	86400	 IN 	AAAA	2a03:b0c0:1:d0::510:8001
-www	86400	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
+www	86400	 IN 	AAAA	2a03:b0c0:2:d0::e81:7001
 
 ; CAA Records
 @	3600	 IN 	CAA	0	issue	"letsencrypt.org"
