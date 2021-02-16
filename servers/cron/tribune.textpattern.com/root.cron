@@ -1,0 +1,12 @@
+15 23 * * * curl -Oz /opt/certs/mozilla-cacert.pem https://curl.haxx.se/ca/cacert.pem && chmod 755 /opt/certs/mozilla-cacert.pem
+18 4 * * * sleep 28 && /usr/bin/certbot renew --config-dir /etc/certbot/ && systemctl reload nginx
+34 23 * * * bash /usr/libexec/netdata/netdata-updater.sh
+*/15 * * * * sleep 15 && bash /opt/php/7.3/php-fpm73restartifdown.sh
+*/10 * * * * sleep 10 && bash /opt/php/7.4/php-fpm74restartifdown.sh
+15,45 * * * * bash /var/www/sites/textpattern.com/plugins/staging/build.sh
+15,45 * * * * sleep 15 && bash /var/www/sites/textpattern.com/themes/staging/build.sh
+16 2 * * * /usr/local/bin/php /opt/phpbu/phpbu.phar --configuration=/var/www/sites/textpattern.com/themes/backups/themes.textpattern.com-phpbu-config-20-daily.xml
+31 5 * * 6 /usr/local/bin/php /opt/phpbu/phpbu.phar --configuration=/var/www/sites/textpattern.com/themes/backups/themes.textpattern.com-phpbu-config-30-weekly.xml
+26 3 * * * /usr/local/bin/php /opt/phpbu/phpbu.phar --configuration=/var/www/sites/textpattern.com/plugins/backups/plugins.textpattern.com-phpbu-config-20-daily.xml
+38 3 * * 0 /usr/local/bin/php /opt/phpbu/phpbu.phar --configuration=/var/www/sites/textpattern.com/plugins/backups/plugins.textpattern.com-phpbu-config-30-weekly.xml
+35 6 * * * sleep 31 && curl -#Lo /etc/nginx/includes/vendors/h5bp/mime.types https://raw.githubusercontent.com/h5bp/server-configs-nginx/master/mime.types
