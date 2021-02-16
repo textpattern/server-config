@@ -3,7 +3,7 @@
 
 ### dirs are absolute and mUsT NoT hAvE TrAiLiNg SlAsHeS oR ElSe
 repo_url="https://github.com/textpattern/textpattern-curated-themes-list"
-repo_branch="master"
+repo_branch="main"
 repo_parent_dir="/var/www/sites/textpattern.com/themes/staging"
 repo_source_dir="/var/www/sites/textpattern.com/themes/staging/_github-master/library-of-themes"
 web_target_dir="/var/www/sites/textpattern.com/themes/live/library-of-themes"

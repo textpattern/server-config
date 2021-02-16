@@ -3,7 +3,7 @@
 
 ### get latest files
 rm -rf /var/www/vhosts/textpattern.com/design-patterns-classic/staging/_github
-git clone --branch 'master' --depth 1 --single-branch https://github.com/philwareham/textpattern-classic-admin-theme.git /var/www/vhosts/textpattern.com/design-patterns-classic/staging/_github
+git clone --branch 'main' --depth 1 --single-branch https://github.com/philwareham/textpattern-classic-admin-theme.git /var/www/vhosts/textpattern.com/design-patterns-classic/staging/_github
 
 ### drop it (in) like it's hot
 rm -rf /var/www/vhosts/textpattern.com/design-patterns-classic/live/*

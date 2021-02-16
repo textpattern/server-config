@@ -3,7 +3,7 @@
 
 ### dirs are absolute and mUsT NoT hAvE TrAiLiNg SlAsHeS oR ElSe
 repo_url="https://github.com/philwareham/textpattern-hive-admin-theme"
-repo_branch_dev="master"
+repo_branch_dev="main"
 repo_branch_stable="4.8.x"
 repo_source_dir_stub="/var/www/sites/textpattern.com/design-patterns/staging/_github"
 web_target_dir_dev="/var/www/sites/textpattern.com/design-patterns/live/dev"
