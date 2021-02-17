@@ -1,5 +1,5 @@
 ﻿; Domain: textpattern.net
-; Exported (y-m-d hh:mm:ss): 2021-02-17 06:53:50
+; Exported (y-m-d hh:mm:ss): 2021-02-17 08:31:19
 ;
 ; This file is intended for use for informational and archival
 ; purposes ONLY and MUST be edited before use on a production
@@ -30,7 +30,7 @@ $ORIGIN textpattern.net.
 
 ; SOA Record
 @	3600	 IN 	SOA	ns23.domaincontrol.com.	dns.jomax.net. (
-					2021021707
+					2021021719
 					28800
 					7200
 					604800
@@ -39,7 +39,10 @@ $ORIGIN textpattern.net.
 
 ; A Records
 @	86400	 IN 	A	46.101.158.114
+tonight	3600	 IN 	A	165.227.172.95
+tribune	3600	 IN 	A	46.101.24.153
 trident	3600	 IN 	A	46.101.158.114
+trumpet	3600	 IN 	A	188.166.20.212
 www	86400	 IN 	A	46.101.158.114
 
 ; CNAME Records
@@ -52,14 +55,23 @@ www	86400	 IN 	A	46.101.158.114
 
 ; AAAA Records
 @	86400	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
+tonight	3600	 IN 	AAAA	2a03:b0c0:3:d0::1111:2001
+tribune	3600	 IN 	AAAA	2a03:b0c0:1:d0::510:8001
 trident	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
+trumpet	3600	 IN 	AAAA	2a03:b0c0:2:d0::e81:7001
 www	86400	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
 
 ; CAA Records
 @	3600	 IN 	CAA	0	issue	"letsencrypt.org"
 @	3600	 IN 	CAA	0	issuewild	";"
+tonight	3600	 IN 	CAA	0	issue	"letsencrypt.org"
+tonight	3600	 IN 	CAA	0	issuewild	";"
+tribune	3600	 IN 	CAA	0	issue	"letsencrypt.org"
+tribune	3600	 IN 	CAA	0	issuewild	";"
 trident	3600	 IN 	CAA	0	issuewild	";"
 trident	3600	 IN 	CAA	0	issue	"letsencrypt.org"
+trumpet	3600	 IN 	CAA	0	issue	"letsencrypt.org"
+trumpet	3600	 IN 	CAA	0	issuewild	";"
 www	3600	 IN 	CAA	0	issue	"letsencrypt.org"
 www	3600	 IN 	CAA	0	issuewild	";"
 
