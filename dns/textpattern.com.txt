@@ -1,6 +1,6 @@
 ;;
 ;; Domain:     textpattern.com.
-;; Exported:   2021-02-17 16:52:23
+;; Exported:   2021-02-17 18:28:13
 ;;
 ;; This file is intended for use for informational and archival
 ;; purposes ONLY and MUST be edited before use on a production
@@ -24,7 +24,7 @@
 ;;
 ;; Use at your own risk.
 ;; SOA Record
-textpattern.com.	3600	IN	SOA	textpattern.com. root.textpattern.com. 2036524734 7200 3600 86400 3600
+textpattern.com.	3600	IN	SOA	textpattern.com. root.textpattern.com. 2036525309 7200 3600 86400 3600
 
 ;; A Records
 design-patterns.textpattern.com.	86400	IN	A	46.101.24.153

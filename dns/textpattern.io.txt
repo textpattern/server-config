@@ -1,74 +1,52 @@
-﻿; Domain: textpattern.io
-; Exported (y-m-d hh:mm:ss): 2021-02-17 09:39:21
-;
-; This file is intended for use for informational and archival
-; purposes ONLY and MUST be edited before use on a production
-; DNS server.
-;
-; In particular, you must update the SOA record with the correct
-; authoritative name server and contact e-mail address information,
-; and add the correct NS records for the name servers which will
-; be authoritative for this domain.
-;
-; For further information, please consult the BIND documentation
-; located on the following website:
-;
-; http://www.isc.org/
-;
-; And RFC 1035:
-;
-; http://www.ietf.org/rfc/rfc1035.txt
-;
-; Please note that we do NOT offer technical support for any use
-; of this zone data, the BIND name server, or any other third-
-; party DNS software.
-;
-; Use at your own risk.
+;;
+;; Domain:     textpattern.io.
+;; Exported:   2021-02-17 18:28:23
+;;
+;; This file is intended for use for informational and archival
+;; purposes ONLY and MUST be edited before use on a production
+;; DNS server.  In particular, you must:
+;;   -- update the SOA record with the correct authoritative name server
+;;   -- update the SOA record with the contact e-mail address information
+;;   -- update the NS record(s) with the authoritative name servers for this domain.
+;;
+;; For further information, please consult the BIND documentation
+;; located on the following website:
+;;
+;; http://www.isc.org/
+;;
+;; And RFC 1035:
+;;
+;; http://www.ietf.org/rfc/rfc1035.txt
+;;
+;; Please note that we do NOT offer technical support for any use
+;; of this zone data, the BIND name server, or any other third-party
+;; DNS software.
+;;
+;; Use at your own risk.
+;; SOA Record
+textpattern.io.	3600	IN	SOA	textpattern.io. root.textpattern.io. 2036525310 7200 3600 86400 3600
 
+;; A Records
+docs.textpattern.io.	3600	IN	A	188.166.20.212
+forum.textpattern.io.	86400	IN	A	46.101.24.153
+textpattern.io.	86400	IN	A	188.166.20.212
+www.textpattern.io.	86400	IN	A	188.166.20.212
 
-$ORIGIN textpattern.io.
+;; AAAA Records
+docs.textpattern.io.	86400	IN	AAAA	2a03:b0c0:2:d0::e81:7001
+forum.textpattern.io.	86400	IN	AAAA	2a03:b0c0:1:d0::510:8001
+textpattern.io.	86400	IN	AAAA	2a03:b0c0:2:d0::e81:7001
+www.textpattern.io.	86400	IN	AAAA	2a03:b0c0:2:d0::e81:7001
 
-; SOA Record
-@	3600	 IN 	SOA	ns37.domaincontrol.com.	dns.jomax.net. (
-					2021021702
-					28800
-					7200
-					604800
-					3600
-					) 
+;; CAA Records
+docs.textpattern.io.	3600	IN	CAA	0 issuewild ";"
+docs.textpattern.io.	3600	IN	CAA	0 issue "letsencrypt.org"
+forum.textpattern.io.	3600	IN	CAA	0 issuewild ";"
+forum.textpattern.io.	3600	IN	CAA	0 issue "letsencrypt.org"
+textpattern.io.	3600	IN	CAA	0 issue "letsencrypt.org"
+textpattern.io.	3600	IN	CAA	0 issuewild ";"
+www.textpattern.io.	3600	IN	CAA	0 issue "letsencrypt.org"
+www.textpattern.io.	3600	IN	CAA	0 issuewild ";"
 
-; A Records
-@	86400	 IN 	A	188.166.20.212
-docs	86400	 IN 	A	188.166.20.212
-forum	86400	 IN 	A	46.101.24.153
-www	86400	 IN 	A	188.166.20.212
-
-; CNAME Records
-translate	86400	 IN 	CNAME	translate.textpattern.com.
-
-; MX Records
-
-; TXT Records
-
-; SRV Records
-
-; AAAA Records
-@	86400	 IN 	AAAA	2a03:b0c0:2:d0::e81:7001
-docs	86400	 IN 	AAAA	2a03:b0c0:2:d0::e81:7001
-forum	86400	 IN 	AAAA	2a03:b0c0:1:d0::510:8001
-www	86400	 IN 	AAAA	2a03:b0c0:2:d0::e81:7001
-
-; CAA Records
-@	3600	 IN 	CAA	0	issue	"letsencrypt.org"
-@	3600	 IN 	CAA	0	issuewild	";"
-docs	3600	 IN 	CAA	0	issue	"letsencrypt.org"
-docs	3600	 IN 	CAA	0	issuewild	";"
-forum	3600	 IN 	CAA	0	issue	"letsencrypt.org"
-forum	3600	 IN 	CAA	0	issuewild	";"
-www	3600	 IN 	CAA	0	issue	"letsencrypt.org"
-www	3600	 IN 	CAA	0	issuewild	";"
-
-; NS Records
-@	3600	 IN 	NS	ns37.domaincontrol.com.
-@	3600	 IN 	NS	ns38.domaincontrol.com.
-
+;; CNAME Records
+translate.textpattern.io.	86400	IN	CNAME	translate.textpattern.com.

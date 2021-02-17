@@ -1,65 +1,44 @@
-﻿; Domain: txpmag.com
-; Exported (y-m-d hh:mm:ss): 2021-01-04 12:01:57
-;
-; This file is intended for use for informational and archival
-; purposes ONLY and MUST be edited before use on a production
-; DNS server.
-;
-; In particular, you must update the SOA record with the correct
-; authoritative name server and contact e-mail address information,
-; and add the correct NS records for the name servers which will
-; be authoritative for this domain.
-;
-; For further information, please consult the BIND documentation
-; located on the following website:
-;
-; http://www.isc.org/
-;
-; And RFC 1035:
-;
-; http://www.ietf.org/rfc/rfc1035.txt
-;
-; Please note that we do NOT offer technical support for any use
-; of this zone data, the BIND name server, or any other third-
-; party DNS software.
-;
-; Use at your own risk.
+;;
+;; Domain:     txpmag.com.
+;; Exported:   2021-02-17 18:28:51
+;;
+;; This file is intended for use for informational and archival
+;; purposes ONLY and MUST be edited before use on a production
+;; DNS server.  In particular, you must:
+;;   -- update the SOA record with the correct authoritative name server
+;;   -- update the SOA record with the contact e-mail address information
+;;   -- update the NS record(s) with the authoritative name servers for this domain.
+;;
+;; For further information, please consult the BIND documentation
+;; located on the following website:
+;;
+;; http://www.isc.org/
+;;
+;; And RFC 1035:
+;;
+;; http://www.ietf.org/rfc/rfc1035.txt
+;;
+;; Please note that we do NOT offer technical support for any use
+;; of this zone data, the BIND name server, or any other third-party
+;; DNS software.
+;;
+;; Use at your own risk.
+;; SOA Record
+txpmag.com.	3600	IN	SOA	txpmag.com. root.txpmag.com. 2036525313 7200 3600 86400 3600
 
+;; A Records
+txpmag.com.	86400	IN	A	165.227.172.95
+www.txpmag.com.	86400	IN	A	165.227.172.95
 
-$ORIGIN txpmag.com.
+;; AAAA Records
+txpmag.com.	86400	IN	AAAA	2a03:b0c0:3:d0::1111:2001
+www.txpmag.com.	86400	IN	AAAA	2a03:b0c0:3:d0::1111:2001
 
-; SOA Record
-@	3600	 IN 	SOA	ns27.domaincontrol.com.	dns.jomax.net. (
-					2021010403
-					28800
-					7200
-					604800
-					3600
-					) 
+;; CAA Records
+txpmag.com.	3600	IN	CAA	0 issuewild ";"
+txpmag.com.	3600	IN	CAA	0 issue "letsencrypt.org"
+www.txpmag.com.	3600	IN	CAA	0 issuewild ";"
+www.txpmag.com.	3600	IN	CAA	0 issue "letsencrypt.org"
 
-; A Records
-@	86400	 IN 	A	165.227.172.95
-www	86400	 IN 	A	165.227.172.95
-
-; CNAME Records
-
-; MX Records
-
-; TXT Records
-
-; SRV Records
-
-; AAAA Records
-@	86400	 IN 	AAAA	2a03:b0c0:3:d0::1111:2001
-www	86400	 IN 	AAAA	2a03:b0c0:3:d0::1111:2001
-
-; CAA Records
-@	3600	 IN 	CAA	0	issuewild	";"
-@	3600	 IN 	CAA	0	issue	"letsencrypt.org"
-www	3600	 IN 	CAA	0	issuewild	";"
-www	3600	 IN 	CAA	0	issue	"letsencrypt.org"
-
-; NS Records
-@	3600	 IN 	NS	ns27.domaincontrol.com.
-@	3600	 IN 	NS	ns28.domaincontrol.com.
-
+;; TXT Records
+txpmag.com.	3600	IN	TXT	"v=spf1 include:trumpet.textpattern.com ~all"

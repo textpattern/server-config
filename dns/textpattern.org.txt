@@ -1,66 +1,44 @@
-﻿; Domain: textpattern.org
-; Exported (y-m-d hh:mm:ss): 2021-02-08 12:14:28
-;
-; This file is intended for use for informational and archival
-; purposes ONLY and MUST be edited before use on a production
-; DNS server.
-;
-; In particular, you must update the SOA record with the correct
-; authoritative name server and contact e-mail address information,
-; and add the correct NS records for the name servers which will
-; be authoritative for this domain.
-;
-; For further information, please consult the BIND documentation
-; located on the following website:
-;
-; http://www.isc.org/
-;
-; And RFC 1035:
-;
-; http://www.ietf.org/rfc/rfc1035.txt
-;
-; Please note that we do NOT offer technical support for any use
-; of this zone data, the BIND name server, or any other third-
-; party DNS software.
-;
-; Use at your own risk.
+;;
+;; Domain:     textpattern.org.
+;; Exported:   2021-02-17 18:28:42
+;;
+;; This file is intended for use for informational and archival
+;; purposes ONLY and MUST be edited before use on a production
+;; DNS server.  In particular, you must:
+;;   -- update the SOA record with the correct authoritative name server
+;;   -- update the SOA record with the contact e-mail address information
+;;   -- update the NS record(s) with the authoritative name servers for this domain.
+;;
+;; For further information, please consult the BIND documentation
+;; located on the following website:
+;;
+;; http://www.isc.org/
+;;
+;; And RFC 1035:
+;;
+;; http://www.ietf.org/rfc/rfc1035.txt
+;;
+;; Please note that we do NOT offer technical support for any use
+;; of this zone data, the BIND name server, or any other third-party
+;; DNS software.
+;;
+;; Use at your own risk.
+;; SOA Record
+textpattern.org.	3600	IN	SOA	textpattern.org. root.textpattern.org. 2036525312 7200 3600 86400 3600
 
+;; A Records
+textpattern.org.	86400	IN	A	188.166.20.212
+www.textpattern.org.	86400	IN	A	188.166.20.212
 
-$ORIGIN textpattern.org.
+;; AAAA Records
+textpattern.org.	86400	IN	AAAA	2a03:b0c0:2:d0::e81:7001
+www.textpattern.org.	86400	IN	AAAA	2a03:b0c0:2:d0::e81:7001
 
-; SOA Record
-@	3600	 IN 	SOA	ns23.domaincontrol.com.	dns.jomax.net. (
-					2021020804
-					28800
-					7200
-					604800
-					3600
-					) 
+;; CAA Records
+textpattern.org.	3600	IN	CAA	0 issue "letsencrypt.org"
+textpattern.org.	3600	IN	CAA	0 issuewild ";"
+www.textpattern.org.	3600	IN	CAA	0 issue "letsencrypt.org"
+www.textpattern.org.	3600	IN	CAA	0 issuewild ";"
 
-; A Records
-@	86400	 IN 	A	188.166.20.212
-www	86400	 IN 	A	188.166.20.212
-
-; CNAME Records
-
-; MX Records
-
-; TXT Records
-@	86400	 IN 	TXT	"v=spf1 include:trumpet.textpattern.com ~all"
-
-; SRV Records
-
-; AAAA Records
-@	86400	 IN 	AAAA	2a03:b0c0:2:d0::e81:7001
-www	86400	 IN 	AAAA	2a03:b0c0:2:d0::e81:7001
-
-; CAA Records
-@	3600	 IN 	CAA	0	issue	"letsencrypt.org"
-@	3600	 IN 	CAA	0	issuewild	";"
-www	3600	 IN 	CAA	0	issue	"letsencrypt.org"
-www	3600	 IN 	CAA	0	issuewild	";"
-
-; NS Records
-@	3600	 IN 	NS	ns23.domaincontrol.com.
-@	3600	 IN 	NS	ns24.domaincontrol.com.
-
+;; TXT Records
+textpattern.org.	3600	IN	TXT	"v=spf1 include:trumpet.textpattern.com ~all"

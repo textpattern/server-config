@@ -1,81 +1,57 @@
-﻿; Domain: textpattern.net
-; Exported (y-m-d hh:mm:ss): 2021-02-17 08:31:19
-;
-; This file is intended for use for informational and archival
-; purposes ONLY and MUST be edited before use on a production
-; DNS server.
-;
-; In particular, you must update the SOA record with the correct
-; authoritative name server and contact e-mail address information,
-; and add the correct NS records for the name servers which will
-; be authoritative for this domain.
-;
-; For further information, please consult the BIND documentation
-; located on the following website:
-;
-; http://www.isc.org/
-;
-; And RFC 1035:
-;
-; http://www.ietf.org/rfc/rfc1035.txt
-;
-; Please note that we do NOT offer technical support for any use
-; of this zone data, the BIND name server, or any other third-
-; party DNS software.
-;
-; Use at your own risk.
+;;
+;; Domain:     textpattern.net.
+;; Exported:   2021-02-17 18:28:33
+;;
+;; This file is intended for use for informational and archival
+;; purposes ONLY and MUST be edited before use on a production
+;; DNS server.  In particular, you must:
+;;   -- update the SOA record with the correct authoritative name server
+;;   -- update the SOA record with the contact e-mail address information
+;;   -- update the NS record(s) with the authoritative name servers for this domain.
+;;
+;; For further information, please consult the BIND documentation
+;; located on the following website:
+;;
+;; http://www.isc.org/
+;;
+;; And RFC 1035:
+;;
+;; http://www.ietf.org/rfc/rfc1035.txt
+;;
+;; Please note that we do NOT offer technical support for any use
+;; of this zone data, the BIND name server, or any other third-party
+;; DNS software.
+;;
+;; Use at your own risk.
+;; SOA Record
+textpattern.net.	3600	IN	SOA	textpattern.net. root.textpattern.net. 2036525311 7200 3600 86400 3600
 
+;; A Records
+textpattern.net.	86400	IN	A	46.101.24.153
+tonight.textpattern.net.	86400	IN	A	165.227.172.95
+tribune.textpattern.net.	86400	IN	A	46.101.24.153
+trident.textpattern.net.	86400	IN	A	46.101.158.114
+trumpet.textpattern.net.	86400	IN	A	188.166.20.212
+www.textpattern.net.	86400	IN	A	46.101.24.153
 
-$ORIGIN textpattern.net.
+;; AAAA Records
+textpattern.net.	86400	IN	AAAA	2a03:b0c0:1:d0::510:8001
+tonight.textpattern.net.	86400	IN	AAAA	2a03:b0c0:3:d0::1111:2001
+tribune.textpattern.net.	86400	IN	AAAA	2a03:b0c0:1:d0::510:8001
+trident.textpattern.net.	86400	IN	AAAA	2a03:b0c0:3:d0::db2:5001
+trumpet.textpattern.net.	86400	IN	AAAA	2a03:b0c0:2:d0::e81:7001
+www.textpattern.net.	86400	IN	AAAA	2a03:b0c0:1:d0::510:8001
 
-; SOA Record
-@	3600	 IN 	SOA	ns23.domaincontrol.com.	dns.jomax.net. (
-					2021021719
-					28800
-					7200
-					604800
-					3600
-					) 
-
-; A Records
-@	86400	 IN 	A	46.101.158.114
-tonight	3600	 IN 	A	165.227.172.95
-tribune	3600	 IN 	A	46.101.24.153
-trident	3600	 IN 	A	46.101.158.114
-trumpet	3600	 IN 	A	188.166.20.212
-www	86400	 IN 	A	46.101.158.114
-
-; CNAME Records
-
-; MX Records
-
-; TXT Records
-
-; SRV Records
-
-; AAAA Records
-@	86400	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
-tonight	3600	 IN 	AAAA	2a03:b0c0:3:d0::1111:2001
-tribune	3600	 IN 	AAAA	2a03:b0c0:1:d0::510:8001
-trident	3600	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
-trumpet	3600	 IN 	AAAA	2a03:b0c0:2:d0::e81:7001
-www	86400	 IN 	AAAA	2a03:b0c0:3:d0::db2:5001
-
-; CAA Records
-@	3600	 IN 	CAA	0	issue	"letsencrypt.org"
-@	3600	 IN 	CAA	0	issuewild	";"
-tonight	3600	 IN 	CAA	0	issue	"letsencrypt.org"
-tonight	3600	 IN 	CAA	0	issuewild	";"
-tribune	3600	 IN 	CAA	0	issue	"letsencrypt.org"
-tribune	3600	 IN 	CAA	0	issuewild	";"
-trident	3600	 IN 	CAA	0	issuewild	";"
-trident	3600	 IN 	CAA	0	issue	"letsencrypt.org"
-trumpet	3600	 IN 	CAA	0	issue	"letsencrypt.org"
-trumpet	3600	 IN 	CAA	0	issuewild	";"
-www	3600	 IN 	CAA	0	issue	"letsencrypt.org"
-www	3600	 IN 	CAA	0	issuewild	";"
-
-; NS Records
-@	3600	 IN 	NS	ns23.domaincontrol.com.
-@	3600	 IN 	NS	ns24.domaincontrol.com.
-
+;; CAA Records
+textpattern.net.	3600	IN	CAA	0 issuewild ";"
+textpattern.net.	3600	IN	CAA	0 issue "letsencrypt.org"
+tonight.textpattern.net.	3600	IN	CAA	0 issuewild ";"
+tonight.textpattern.net.	3600	IN	CAA	0 issue "letsencrypt.org"
+tribune.textpattern.net.	3600	IN	CAA	0 issuewild ";"
+tribune.textpattern.net.	3600	IN	CAA	0 issue "letsencrypt.org"
+trident.textpattern.net.	3600	IN	CAA	0 issue "letsencrypt.org"
+trident.textpattern.net.	3600	IN	CAA	0 issuewild ";"
+trumpet.textpattern.net.	3600	IN	CAA	0 issuewild ";"
+trumpet.textpattern.net.	3600	IN	CAA	0 issue "letsencrypt.org"
+www.textpattern.net.	3600	IN	CAA	0 issue "letsencrypt.org"
+www.textpattern.net.	3600	IN	CAA	0 issuewild ";"
