@@ -1,6 +1,6 @@
 ;;
 ;; Domain:     textpattern.com.
-;; Exported:   2021-03-14 12:26:04
+;; Exported:   2021-03-14 14:37:11
 ;;
 ;; This file is intended for use for informational and archival
 ;; purposes ONLY and MUST be edited before use on a production
@@ -24,7 +24,7 @@
 ;;
 ;; Use at your own risk.
 ;; SOA Record
-textpattern.com.	3600	IN	SOA	textpattern.com. root.textpattern.com. 2036739136 7200 3600 86400 3600
+textpattern.com.	3600	IN	SOA	textpattern.com. root.textpattern.com. 2036739923 7200 3600 86400 3600
 
 ;; A Records
 design-patterns.textpattern.com.	86400	IN	A	46.101.24.153
@@ -78,6 +78,6 @@ textpattern.com.	86400	IN	MX	5 alt1.aspmx.l.google.com.
 
 ;; TXT Records
 _github-challenge-textpattern.textpattern.com.	86400	IN	TXT	"3015308630"
-textpattern.com.	86400	IN	TXT	"v=spf1 a mx a:tribune.textpattern.com include:_spf.google.com include:tonight.textpattern.com include:trumpet.textpattern.com ~all"
+textpattern.com.	86400	IN	TXT	"v=spf1 a mx a:tribune.textpattern.net include:tonight.textpattern.net include:trumpet.textpattern.net include:_spf.google.com ~all"
 textpattern.com.	86400	IN	TXT	"google-site-verification=0UDOZb1cCi07LimS-owtK7C7HEt6uqMUF4gZXVinZC0"
 textpattern.com.	86400	IN	TXT	"google-site-verification=yJ4FHP6mvcB7VgPjgI_qht_wwFORdGHBsqdgt6wGH1U"
