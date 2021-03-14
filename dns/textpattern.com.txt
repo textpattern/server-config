@@ -1,6 +1,6 @@
 ;;
 ;; Domain:     textpattern.com.
-;; Exported:   2021-02-17 18:28:13
+;; Exported:   2021-03-14 12:26:04
 ;;
 ;; This file is intended for use for informational and archival
 ;; purposes ONLY and MUST be edited before use on a production
@@ -24,24 +24,22 @@
 ;;
 ;; Use at your own risk.
 ;; SOA Record
-textpattern.com.	3600	IN	SOA	textpattern.com. root.textpattern.com. 2036525309 7200 3600 86400 3600
+textpattern.com.	3600	IN	SOA	textpattern.com. root.textpattern.com. 2036739136 7200 3600 86400 3600
 
 ;; A Records
 design-patterns.textpattern.com.	86400	IN	A	46.101.24.153
-forum.textpattern.com.	1800	IN	A	46.101.158.114
+forum.textpattern.com.	86400	IN	A	46.101.24.153
 plugins.textpattern.com.	86400	IN	A	46.101.24.153
 rpc.textpattern.com.	86400	IN	A	165.227.172.95
-*.textpattern.com.	1	IN	A	46.101.158.114
 textpattern.com.	86400	IN	A	188.166.20.212
 themes.textpattern.com.	86400	IN	A	46.101.24.153
 www.textpattern.com.	86400	IN	A	188.166.20.212
 
 ;; AAAA Records
 design-patterns.textpattern.com.	86400	IN	AAAA	2a03:b0c0:1:d0::510:8001
-forum.textpattern.com.	1800	IN	AAAA	2a03:b0c0:3:d0::db2:5001
+forum.textpattern.com.	86400	IN	AAAA	2a03:b0c0:1:d0::510:8001
 plugins.textpattern.com.	86400	IN	AAAA	2a03:b0c0:1:d0::510:8001
 rpc.textpattern.com.	86400	IN	AAAA	2a03:b0c0:3:d0::1111:2001
-*.textpattern.com.	1	IN	AAAA	2a03:b0c0:3:d0::db2:5001
 textpattern.com.	86400	IN	AAAA	2a03:b0c0:2:d0::e81:7001
 themes.textpattern.com.	86400	IN	AAAA	2a03:b0c0:1:d0::510:8001
 www.textpattern.com.	86400	IN	AAAA	2a03:b0c0:2:d0::e81:7001
@@ -80,6 +78,6 @@ textpattern.com.	86400	IN	MX	5 alt1.aspmx.l.google.com.
 
 ;; TXT Records
 _github-challenge-textpattern.textpattern.com.	86400	IN	TXT	"3015308630"
+textpattern.com.	86400	IN	TXT	"v=spf1 a mx a:tribune.textpattern.com include:_spf.google.com include:tonight.textpattern.com include:trumpet.textpattern.com ~all"
 textpattern.com.	86400	IN	TXT	"google-site-verification=0UDOZb1cCi07LimS-owtK7C7HEt6uqMUF4gZXVinZC0"
 textpattern.com.	86400	IN	TXT	"google-site-verification=yJ4FHP6mvcB7VgPjgI_qht_wwFORdGHBsqdgt6wGH1U"
-textpattern.com.	86400	IN	TXT	"v=spf1 a mx a:tribune.textpattern.com include:_spf.google.com include:tonight.textpattern.com include:trident.textpattern.com include:trumpet.textpattern.com ~all"
