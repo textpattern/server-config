@@ -8,3 +8,5 @@
 15,45 * * * * sleep 30 && bash /var/www/servers/textpattern.com/design-patterns/staging/build.sh
 8 * * * * /usr/local/bin/php /opt/phpbu/phpbu.phar --configuration=/var/www/servers/textpattern.com/forum/backups/forum.textpattern.com-phpbu-config-10-hourly.xml
 25 1 * * * /usr/local/bin/php /opt/phpbu/phpbu.phar --configuration=/var/www/servers/textpattern.com/forum/backups/forum.textpattern.com-phpbu-config-20-daily.xml
+28 2 * * * /usr/local/bin/php /opt/phpbu/phpbu.phar --configuration=/var/www/servers/textpattern.com/plugins/backups/plugins.textpattern.com-phpbu-config-20-daily.xml
+28 3 * * * /usr/local/bin/php /opt/phpbu/phpbu.phar --configuration=/var/www/servers/textpattern.com/themes/backups/themes.textpattern.com-phpbu-config-20-daily.xml
