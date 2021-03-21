@@ -6,3 +6,5 @@
 15,45 * * * * bash /var/www/servers/textpattern.com/plugins/staging/build.sh
 15,45 * * * * sleep 15 && bash /var/www/servers/textpattern.com/themes/staging/build.sh
 15,45 * * * * sleep 30 && bash /var/www/servers/textpattern.com/design-patterns/staging/build.sh
+8 * * * * /usr/local/bin/php /opt/phpbu/phpbu.phar --configuration=/var/www/servers/textpattern.com/forum/backups/forum.textpattern.com-phpbu-config-10-hourly.xml
+25 1 * * * /usr/local/bin/php /opt/phpbu/phpbu.phar --configuration=/var/www/servers/textpattern.com/forum/backups/forum.textpattern.com-phpbu-config-20-daily.xml
