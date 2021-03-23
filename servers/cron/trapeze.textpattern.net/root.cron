@@ -5,3 +5,5 @@
 */4 * * * * sleep 5 && bash /opt/php/8.0/php-fpm80restartifdown.sh
 22 3 * * * /usr/local/bin/php /opt/phpbu/phpbu.phar --configuration=/var/www/servers/textpattern.org/www/backups/www.textpattern.org-phpbu-config-20-daily.xml
 20 3 * * * /usr/local/bin/php /opt/phpbu/phpbu.phar --configuration=/var/www/servers/textpattern.com/www/backups/www.textpattern.com-phpbu-config-20-daily.xml
+25 3 * * * /usr/local/bin/php /opt/phpbu/phpbu.phar --configuration=/var/www/servers/textpattern.com/rpc/backups/rpc.textpattern.com-phpbu-config-20-daily.xml
+20 3 * * * /usr/local/bin/php /opt/phpbu/phpbu.phar --configuration=/var/www/servers/textile-lang.com/www/backups/www.textile-lang.com-phpbu-config-20-daily.xml
