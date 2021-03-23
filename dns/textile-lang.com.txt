@@ -1,6 +1,6 @@
 ;;
 ;; Domain:     textile-lang.com.
-;; Exported:   2021-02-17 18:28:02
+;; Exported:   2021-03-23 13:58:24
 ;;
 ;; This file is intended for use for informational and archival
 ;; purposes ONLY and MUST be edited before use on a production
@@ -24,15 +24,15 @@
 ;;
 ;; Use at your own risk.
 ;; SOA Record
-textile-lang.com.	3600	IN	SOA	textile-lang.com. root.textile-lang.com. 2036525308 7200 3600 86400 3600
+textile-lang.com.	3600	IN	SOA	textile-lang.com. root.textile-lang.com. 2036817450 7200 3600 86400 3600
 
 ;; A Records
-textile-lang.com.	86400	IN	A	165.227.172.95
-www.textile-lang.com.	86400	IN	A	165.227.172.95
+textile-lang.com.	86400	IN	A	143.198.61.81
+www.textile-lang.com.	86400	IN	A	143.198.61.81
 
 ;; AAAA Records
-textile-lang.com.	86400	IN	AAAA	2a03:b0c0:3:d0::1111:2001
-www.textile-lang.com.	86400	IN	AAAA	2a03:b0c0:3:d0::1111:2001
+textile-lang.com.	86400	IN	AAAA	2604:a880:4:1d0::24c:0
+www.textile-lang.com.	86400	IN	AAAA	2604:a880:4:1d0::24c:0
 
 ;; CAA Records
 textile-lang.com.	3600	IN	CAA	0 issue "letsencrypt.org"

@@ -1,6 +1,6 @@
 ;;
 ;; Domain:     textpattern.org.
-;; Exported:   2021-02-17 18:28:42
+;; Exported:   2021-03-23 14:00:00
 ;;
 ;; This file is intended for use for informational and archival
 ;; purposes ONLY and MUST be edited before use on a production
@@ -24,15 +24,15 @@
 ;;
 ;; Use at your own risk.
 ;; SOA Record
-textpattern.org.	3600	IN	SOA	textpattern.org. root.textpattern.org. 2036525312 7200 3600 86400 3600
+textpattern.org.	3600	IN	SOA	textpattern.org. root.textpattern.org. 2036817460 7200 3600 86400 3600
 
 ;; A Records
-textpattern.org.	86400	IN	A	188.166.20.212
-www.textpattern.org.	86400	IN	A	188.166.20.212
+textpattern.org.	86400	IN	A	143.198.61.81
+www.textpattern.org.	86400	IN	A	143.198.61.81
 
 ;; AAAA Records
-textpattern.org.	86400	IN	AAAA	2a03:b0c0:2:d0::e81:7001
-www.textpattern.org.	86400	IN	AAAA	2a03:b0c0:2:d0::e81:7001
+textpattern.org.	86400	IN	AAAA	2604:a880:4:1d0::24c:0
+www.textpattern.org.	86400	IN	AAAA	2604:a880:4:1d0::24c:0
 
 ;; CAA Records
 textpattern.org.	3600	IN	CAA	0 issue "letsencrypt.org"
@@ -41,4 +41,4 @@ www.textpattern.org.	3600	IN	CAA	0 issue "letsencrypt.org"
 www.textpattern.org.	3600	IN	CAA	0 issuewild ";"
 
 ;; TXT Records
-textpattern.org.	3600	IN	TXT	"v=spf1 include:trumpet.textpattern.com ~all"
+textpattern.org.	3600	IN	TXT	"v=spf1 include:trapeze.textpattern.net ~all"
