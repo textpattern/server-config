@@ -1,6 +1,6 @@
 ;;
 ;; Domain:     textpattern.com.
-;; Exported:   2021-03-23 13:58:44
+;; Exported:   2021-03-24 12:52:01
 ;;
 ;; This file is intended for use for informational and archival
 ;; purposes ONLY and MUST be edited before use on a production
@@ -24,24 +24,24 @@
 ;;
 ;; Use at your own risk.
 ;; SOA Record
-textpattern.com.	3600	IN	SOA	textpattern.com. root.textpattern.com. 2036817452 7200 3600 86400 3600
+textpattern.com.	3600	IN	SOA	textpattern.com. root.textpattern.com. 2036825692 7200 3600 86400 3600
 
 ;; A Records
-design-patterns.textpattern.com.	86400	IN	A	68.183.77.205
-forum.textpattern.com.	86400	IN	A	68.183.77.205
-plugins.textpattern.com.	86400	IN	A	68.183.77.205
-rpc.textpattern.com.	86400	IN	A	143.198.61.81
+design-patterns.textpattern.com.	1	IN	A	68.183.77.205
+forum.textpattern.com.	1	IN	A	68.183.77.205
+plugins.textpattern.com.	1	IN	A	68.183.77.205
+rpc.textpattern.com.	1	IN	A	143.198.61.81
 textpattern.com.	1	IN	A	143.198.61.81
-themes.textpattern.com.	86400	IN	A	68.183.77.205
+themes.textpattern.com.	1	IN	A	68.183.77.205
 www.textpattern.com.	1	IN	A	143.198.61.81
 
 ;; AAAA Records
-design-patterns.textpattern.com.	86400	IN	AAAA	2a03:b0c0:3:d0::13a9:7001
-forum.textpattern.com.	86400	IN	AAAA	2a03:b0c0:3:d0::13a9:7001
-plugins.textpattern.com.	86400	IN	AAAA	2a03:b0c0:3:d0::13a9:7001
-rpc.textpattern.com.	86400	IN	AAAA	2604:a880:4:1d0::24c:0
+design-patterns.textpattern.com.	1	IN	AAAA	2a03:b0c0:3:d0::13a9:7001
+forum.textpattern.com.	1	IN	AAAA	2a03:b0c0:3:d0::13a9:7001
+plugins.textpattern.com.	1	IN	AAAA	2a03:b0c0:3:d0::13a9:7001
+rpc.textpattern.com.	1	IN	AAAA	2604:a880:4:1d0::24c:0
 textpattern.com.	1	IN	AAAA	2604:a880:4:1d0::24c:0
-themes.textpattern.com.	86400	IN	AAAA	2a03:b0c0:3:d0::13a9:7001
+themes.textpattern.com.	1	IN	AAAA	2a03:b0c0:3:d0::13a9:7001
 www.textpattern.com.	1	IN	AAAA	2604:a880:4:1d0::24c:0
 
 ;; CAA Records
@@ -78,6 +78,6 @@ textpattern.com.	86400	IN	MX	5 alt1.aspmx.l.google.com.
 
 ;; TXT Records
 _github-challenge-textpattern.textpattern.com.	86400	IN	TXT	"3015308630"
-textpattern.com.	86400	IN	TXT	"v=spf1 a mx include:tonight.textpattern.net include:tornado.textpattern.net include:trumpet.textpattern.net include:_spf.google.com ~all"
+textpattern.com.	86400	IN	TXT	"v=spf1 a mx include:tornado.textpattern.net include:trapeze.textpattern.net include:_spf.google.com ~all"
 textpattern.com.	86400	IN	TXT	"google-site-verification=0UDOZb1cCi07LimS-owtK7C7HEt6uqMUF4gZXVinZC0"
 textpattern.com.	86400	IN	TXT	"google-site-verification=yJ4FHP6mvcB7VgPjgI_qht_wwFORdGHBsqdgt6wGH1U"
