@@ -1,6 +1,7 @@
 27 22 * * * curl -Oz /opt/certs/mozilla-cacert.pem https://curl.haxx.se/ca/cacert.pem && chmod 755 /opt/certs/mozilla-cacert.pem
 28 5 * * * sleep 11 && curl -#Lo /etc/nginx/includes/vendors/h5bp/mime.types https://raw.githubusercontent.com/h5bp/server-configs-nginx/master/mime.types
 14 3 * * * sleep 56 && /usr/bin/certbot renew --config-dir /etc/certbot/ && systemctl reload nginx
+34 23 * * * bash /usr/libexec/netdata/netdata-updater.sh
 */6 * * * * sleep 10 && bash /opt/php/7.4/php-fpm74restartifdown.sh
 */10 * * * * sleep 5 && bash /opt/php/8.0/php-fpm80restartifdown.sh
 15,45 * * * * bash /var/www/servers/textpattern.com/plugins/staging/build.sh

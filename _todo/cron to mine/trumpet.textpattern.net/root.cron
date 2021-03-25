@@ -1,8 +1,0 @@
-36 21 * * * curl -Oz /opt/certs/mozilla-cacert.pem https://curl.haxx.se/ca/cacert.pem && chmod 755 /opt/certs/mozilla-cacert.pem
-9 6 * * * sleep 46 && /usr/bin/certbot renew --config-dir /etc/certbot/ && systemctl reload nginx
-43 22 * * * bash /usr/libexec/netdata/netdata-updater.sh
-*/10 * * * * sleep 10 && bash /opt/php/7.4/php-fpm74restartifdown.sh
-38 6 * * * sleep 53 && curl -#Lo /etc/nginx/includes/vendors/h5bp/mime.types https://raw.githubusercontent.com/h5bp/server-configs-nginx/master/mime.types
-19 2 * * * /usr/local/bin/php /opt/phpbu/phpbu.phar --configuration=/var/www/sites/textpattern.com/www/backups/www.textpattern.com-phpbu-config-20-daily.xml
-43 3 * * 2 /usr/local/bin/php /opt/phpbu/phpbu.phar --configuration=/var/www/sites/textpattern.com/www/backups/www.textpattern.com-phpbu-config-30-weekly.xml
-16 3 * * * /usr/local/bin/php /opt/phpbu/phpbu.phar --configuration=/var/www/sites/textpattern.org/www/backups/www.textpattern.org-phpbu-config-20-daily.xml
