@@ -5,7 +5,7 @@
 repo_url="https://github.com/textpattern/textpattern-curated-themes-list"
 repo_branch="main"
 repo_parent_dir="/var/www/sites/textpattern.com/themes/staging"
-repo_source_dir="/var/www/sites/textpattern.com/themes/staging/_github-master/library-of-themes"
+repo_source_dir="/var/www/sites/textpattern.com/themes/staging/_github-main/library-of-themes"
 web_target_dir="/var/www/sites/textpattern.com/themes/live/library-of-themes"
 
 rm -rf $repo_parent_dir/_github-$repo_branch

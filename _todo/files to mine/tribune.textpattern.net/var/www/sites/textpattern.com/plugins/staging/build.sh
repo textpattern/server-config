@@ -5,7 +5,7 @@
 repo_url="https://github.com/textpattern/textpattern-curated-plugins-list"
 repo_branch="main"
 repo_parent_dir="/var/www/sites/textpattern.com/plugins/staging"
-repo_source_dir="/var/www/sites/textpattern.com/plugins/staging/_github-master/library-of-plugins"
+repo_source_dir="/var/www/sites/textpattern.com/plugins/staging/_github-main/library-of-plugins"
 web_target_dir="/var/www/sites/textpattern.com/plugins/live/library-of-plugins"
 
 rm -rf $repo_parent_dir/_github-$repo_branch
