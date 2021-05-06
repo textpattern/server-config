@@ -13,6 +13,7 @@
     image/avif 1y;
     image/gif 1y;
     image/jpeg 1y;
+    image/jxl 1y;
     image/png 1y;
     image/svg+xml 1y;
     image/vnd.microsoft.icon 1M;
