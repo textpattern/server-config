@@ -1,12 +1,12 @@
     application/atom+xml 1h;
-    application/javascript 6M;
+    application/javascript 1y;
     application/json 0s;
     application/ld+json 0s;
     application/manifest+json 1w;
     application/rdf+xml 1h;
     application/rss+xml 1h;
     application/schema+json 0s;
-    application/x-javascript 6M;
+    application/x-javascript 1y;
     application/xml 0s;
     font/woff 1y;
     font/woff2 1y;
@@ -20,9 +20,9 @@
     image/webp 1y;
     image/x-icon 1M;
     text/cache-manifest 0s;
-    text/css 6M;
+    text/css 1y;
     text/html 0s;
-    text/javascript 6M;
+    text/javascript 1y;
     text/x-cross-domain-policy 1w;
     text/xml 3600s;
     video/mp4 1y;
