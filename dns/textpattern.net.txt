@@ -1,6 +1,6 @@
 ;;
 ;; Domain:     textpattern.net.
-;; Exported:   2021-04-16 19:02:02
+;; Exported:   2021-09-09 15:28:34
 ;;
 ;; This file is intended for use for informational and archival
 ;; purposes ONLY and MUST be edited before use on a production
@@ -24,7 +24,7 @@
 ;;
 ;; Use at your own risk.
 ;; SOA Record
-textpattern.net.	3600	IN	SOA	textpattern.net. root.textpattern.net. 2037026632 7200 3600 86400 3600
+textpattern.net	3600	IN	SOA	textpattern.net root.textpattern.net 2038286791 7200 3600 86400 3600
 
 ;; A Records
 textpattern.net.	86400	IN	A	143.198.61.81
@@ -41,12 +41,6 @@ www.textpattern.net.	86400	IN	AAAA	2604:a880:4:1d0::24c:0
 ;; CAA Records
 textpattern.net.	3600	IN	CAA	0 issuewild ";"
 textpattern.net.	3600	IN	CAA	0 issue "letsencrypt.org"
-tornado.textpattern.net.	3600	IN	CAA	0 issue "letsencrypt.org"
-tornado.textpattern.net.	3600	IN	CAA	0 issuewild ";"
-trapeze.textpattern.net.	3600	IN	CAA	0 issuewild ";"
-trapeze.textpattern.net.	3600	IN	CAA	0 issue "letsencrypt.org"
-www.textpattern.net.	3600	IN	CAA	0 issue "letsencrypt.org"
-www.textpattern.net.	3600	IN	CAA	0 issuewild ";"
 
 ;; MX Records
 telecom.textpattern.net.	86400	IN	MX	10 telecom.textpattern.net.
