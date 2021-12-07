@@ -1,6 +1,6 @@
 ;;
 ;; Domain:     textpattern.com.
-;; Exported:   2021-12-07 16:53:38
+;; Exported:   2021-12-07 17:29:04
 ;;
 ;; This file is intended for use for informational and archival
 ;; purposes ONLY and MUST be edited before use on a production
@@ -24,11 +24,11 @@
 ;;
 ;; Use at your own risk.
 ;; SOA Record
-textpattern.com	3600	IN	SOA	textpattern.com root.textpattern.com 2039056261 7200 3600 86400 3600
+textpattern.com	3600	IN	SOA	textpattern.com root.textpattern.com 2039056474 7200 3600 86400 3600
 
 ;; A Records
 design-patterns.textpattern.com.	1	IN	A	68.183.77.205
-forum.textpattern.com.	1	IN	A	68.183.77.205
+forum.textpattern.com.	1	IN	A	143.198.61.81
 plugins.textpattern.com.	1	IN	A	68.183.77.205
 rpc.textpattern.com.	1	IN	A	143.198.61.81
 textpattern.com.	1	IN	A	143.198.61.81
@@ -37,7 +37,7 @@ www.textpattern.com.	1	IN	A	143.198.61.81
 
 ;; AAAA Records
 design-patterns.textpattern.com.	1	IN	AAAA	2a03:b0c0:3:d0::13a9:7001
-forum.textpattern.com.	1	IN	AAAA	2a03:b0c0:3:d0::13a9:7001
+forum.textpattern.com.	1	IN	AAAA	2604:a880:4:1d0::24c:0
 plugins.textpattern.com.	1	IN	AAAA	2a03:b0c0:3:d0::13a9:7001
 rpc.textpattern.com.	1	IN	AAAA	2604:a880:4:1d0::24c:0
 textpattern.com.	1	IN	AAAA	2604:a880:4:1d0::24c:0
