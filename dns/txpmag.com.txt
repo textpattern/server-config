@@ -1,6 +1,6 @@
 ;;
 ;; Domain:     txpmag.com.
-;; Exported:   2021-09-09 15:28:52
+;; Exported:   2021-12-09 14:33:20
 ;;
 ;; This file is intended for use for informational and archival
 ;; purposes ONLY and MUST be edited before use on a production
@@ -24,19 +24,19 @@
 ;;
 ;; Use at your own risk.
 ;; SOA Record
-txpmag.com	3600	IN	SOA	txpmag.com root.txpmag.com 2038286793 7200 3600 86400 3600
+txpmag.com	3600	IN	SOA	txpmag.com root.txpmag.com 2039072700 7200 3600 86400 3600
 
 ;; A Records
-txpmag.com.	86400	IN	A	68.183.77.205
-www.txpmag.com.	86400	IN	A	68.183.77.205
+txpmag.com.	1	IN	A	143.198.61.81
+www.txpmag.com.	1	IN	A	143.198.61.81
 
 ;; AAAA Records
-txpmag.com.	86400	IN	AAAA	2a03:b0c0:3:d0::13a9:7001
-www.txpmag.com.	86400	IN	AAAA	2a03:b0c0:3:d0::13a9:7001
+txpmag.com.	1	IN	AAAA	2604:a880:4:1d0::24c:0
+www.txpmag.com.	1	IN	AAAA	2604:a880:4:1d0::24c:0
 
 ;; CAA Records
-txpmag.com.	3600	IN	CAA	0 issuewild ";"
-txpmag.com.	3600	IN	CAA	0 issue "letsencrypt.org"
+txpmag.com.	60	IN	CAA	0 issue "letsencrypt.org"
+txpmag.com.	60	IN	CAA	0 issuewild ";"
 
 ;; TXT Records
-txpmag.com.	3600	IN	TXT	"v=spf1 include:tornado.textpattern.net ~all"
+txpmag.com.	60	IN	TXT	"v=spf1 include:trapeze.textpattern.net ~all"

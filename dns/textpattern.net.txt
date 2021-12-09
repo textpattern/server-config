@@ -1,6 +1,6 @@
 ;;
 ;; Domain:     textpattern.net.
-;; Exported:   2021-12-08 08:32:57
+;; Exported:   2021-12-09 14:33:36
 ;;
 ;; This file is intended for use for informational and archival
 ;; purposes ONLY and MUST be edited before use on a production
@@ -24,14 +24,13 @@
 ;;
 ;; Use at your own risk.
 ;; SOA Record
-textpattern.net	3600	IN	SOA	textpattern.net root.textpattern.net 2039061897 7200 3600 86400 3600
+textpattern.net	3600	IN	SOA	textpattern.net root.textpattern.net 2039072701 7200 3600 86400 3600
 
 ;; A Records
 tarzan.textpattern.net.	60	IN	A	139.59.184.70
 textpattern.net.	86400	IN	A	143.198.61.81
 tomato.textpattern.net.	60	IN	A	159.65.184.125
-tornado.textpattern.net.	86400	IN	A	68.183.77.205
-trapeze.textpattern.net.	86400	IN	A	143.198.61.81
+trapeze.textpattern.net.	60	IN	A	143.198.61.81
 turtle.textpattern.net.	60	IN	A	128.199.69.63
 www.textpattern.net.	86400	IN	A	143.198.61.81
 
@@ -39,25 +38,22 @@ www.textpattern.net.	86400	IN	A	143.198.61.81
 tarzan.textpattern.net.	60	IN	AAAA	2a03:b0c0:1:d0::df6:2001
 textpattern.net.	86400	IN	AAAA	2604:a880:4:1d0::24c:0
 tomato.textpattern.net.	60	IN	AAAA	2604:a880:800:10::987:a001
-tornado.textpattern.net.	86400	IN	AAAA	2a03:b0c0:3:d0::13a9:7001
-trapeze.textpattern.net.	86400	IN	AAAA	2604:a880:4:1d0::24c:0
+trapeze.textpattern.net.	60	IN	AAAA	2604:a880:4:1d0::24c:0
 turtle.textpattern.net.	60	IN	AAAA	2400:6180:0:d0::1062:3001
 www.textpattern.net.	86400	IN	AAAA	2604:a880:4:1d0::24c:0
 
 ;; CAA Records
-textpattern.net.	3600	IN	CAA	0 issuewild ";"
-textpattern.net.	3600	IN	CAA	0 issue "letsencrypt.org"
+textpattern.net.	60	IN	CAA	0 issue "letsencrypt.org"
+textpattern.net.	60	IN	CAA	0 issuewild ";"
 
 ;; MX Records
-tarzan.textpattern.net.	3600	IN	MX	10 tarzan.textpattern.net.
-tomato.textpattern.net.	3600	IN	MX	10 tomato.textpattern.net.
-tornado.textpattern.net.	3600	IN	MX	10 tornado.textpattern.net.
-trapeze.textpattern.net.	3600	IN	MX	10 trapeze.textpattern.net.
-turtle.textpattern.net.	3600	IN	MX	10 turtle.textpattern.net.
+tarzan.textpattern.net.	60	IN	MX	10 tarzan.textpattern.net.
+tomato.textpattern.net.	60	IN	MX	10 tomato.textpattern.net.
+trapeze.textpattern.net.	60	IN	MX	10 trapeze.textpattern.net.
+turtle.textpattern.net.	60	IN	MX	10 turtle.textpattern.net.
 
 ;; TXT Records
-tarzan.textpattern.net.	3600	IN	TXT	"v=spf1 mx a ip4:139.59.184.70/32 ip6:2a03:b0c0:1:d0::df6:2001/128 -all"
-tomato.textpattern.net.	3600	IN	TXT	"v=spf1 mx a ip4:159.65.184.125/32 ip6:2604:a880:800:10::987:a001/128 -all"
-tornado.textpattern.net.	3600	IN	TXT	"v=spf1 mx a ip4:68.183.77.205/32 ip6:2a03:b0c0:3:d0::13a9:7001/128 -all"
-trapeze.textpattern.net.	3600	IN	TXT	"v=spf1 mx a ip4:143.198.61.81/32 ip6:2604:a880:4:1d0::24c:0/128 -all"
-turtle.textpattern.net.	1	IN	TXT	"v=spf1 mx a ip4:128.199.69.63/32 ip6:2400:6180:0:d0::1062:3001/128 -all"
+tarzan.textpattern.net.	60	IN	TXT	"v=spf1 mx a ip4:139.59.184.70/32 ip6:2a03:b0c0:1:d0::df6:2001/128 -all"
+tomato.textpattern.net.	60	IN	TXT	"v=spf1 mx a ip4:159.65.184.125/32 ip6:2604:a880:800:10::987:a001/128 -all"
+trapeze.textpattern.net.	60	IN	TXT	"v=spf1 mx a ip4:143.198.61.81/32 ip6:2604:a880:4:1d0::24c:0/128 -all"
+turtle.textpattern.net.	60	IN	TXT	"v=spf1 mx a ip4:128.199.69.63/32 ip6:2400:6180:0:d0::1062:3001/128 -all"
