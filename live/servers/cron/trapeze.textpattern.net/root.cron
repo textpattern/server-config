@@ -4,7 +4,16 @@
 34 23 * * * bash /usr/libexec/netdata/netdata-updater.sh
 */5 * * * * sleep 5 && bash /opt/php/7.4/php-fpm74restartifdown.sh
 */4 * * * * sleep 5 && bash /opt/php/8.0/php-fpm80restartifdown.sh
+2,12,22,32,42,52 * * * * rm -f /var/www/servers/textpattern.com/forum/live/cache/*.php
 22 3 * * * /usr/local/bin/php /opt/phpbu/phpbu.phar --configuration=/var/www/servers/textpattern.org/www/backups/www.textpattern.org-phpbu-config-20-daily.xml
 20 3 * * * /usr/local/bin/php /opt/phpbu/phpbu.phar --configuration=/var/www/servers/textpattern.com/www/backups/www.textpattern.com-phpbu-config-20-daily.xml
 25 3 * * * /usr/local/bin/php /opt/phpbu/phpbu.phar --configuration=/var/www/servers/textpattern.com/rpc/backups/rpc.textpattern.com-phpbu-config-20-daily.xml
 20 3 * * * /usr/local/bin/php /opt/phpbu/phpbu.phar --configuration=/var/www/servers/textile-lang.com/www/backups/www.textile-lang.com-phpbu-config-20-daily.xml
+*/8 * * * * sleep 14 && bash /opt/php/8.1/php-fpm81restartifdown.sh
+13 * * * * /usr/local/bin/php /opt/phpbu/phpbu.phar --configuration=/var/www/servers/textpattern.com/forum/backups/forum.textpattern.com-phpbu-config-10-hourly.xml
+15,45 * * * * bash /var/www/servers/textpattern.com/plugins/staging/build.sh
+15,45 * * * * sleep 15 && bash /var/www/servers/textpattern.com/themes/staging/build.sh
+15,45 * * * * sleep 30 && bash /var/www/servers/textpattern.com/design-patterns/staging/build.sh
+15 1 * * * /usr/local/bin/php /opt/phpbu/phpbu.phar --configuration=/var/www/servers/textpattern.com/plugins/backups/plugins.textpattern.com-phpbu-config-20-daily.xml
+19 2 * * * /usr/local/bin/php /opt/phpbu/phpbu.phar --configuration=/var/www/servers/textpattern.com/themes/backups/themes.textpattern.com-phpbu-config-20-daily.xml
+27 2 * * * /usr/local/bin/php /opt/phpbu/phpbu.phar --configuration=/var/www/servers/txpmag.com/www/backups/www.txpmag.com-phpbu-config-20-daily.xml
