@@ -1,6 +1,6 @@
 ;;
 ;; Domain:     textpattern.net.
-;; Exported:   2022-02-17 15:29:30
+;; Exported:   2022-03-18 16:30:45
 ;;
 ;; This file is intended for use for informational and archival
 ;; purposes ONLY and MUST be edited before use on a production
@@ -24,19 +24,19 @@
 ;;
 ;; Use at your own risk.
 ;; SOA Record
-textpattern.net	3600	IN	SOA	textpattern.net root.textpattern.net 2039677837 7200 3600 86400 3600
+textpattern.net	3600	IN	SOA	textpattern.net root.textpattern.net 2039928764 7200 3600 86400 3600
 
 ;; A Records
 tarzan.textpattern.net.	1	IN	A	164.92.219.167
-textpattern.net.	1	IN	A	143.198.61.81
+textpattern.net.	1	IN	A	164.92.219.167
 trapeze.textpattern.net.	1	IN	A	143.198.61.81
-www.textpattern.net.	1	IN	A	143.198.61.81
+www.textpattern.net.	1	IN	A	164.92.219.167
 
 ;; AAAA Records
 tarzan.textpattern.net.	1	IN	AAAA	2a03:b0c0:2:d0::13c8:a001
-textpattern.net.	1	IN	AAAA	2604:a880:4:1d0::24c:0
+textpattern.net.	1	IN	AAAA	2a03:b0c0:2:d0::13c8:a001
 trapeze.textpattern.net.	1	IN	AAAA	2604:a880:4:1d0::24c:0
-www.textpattern.net.	1	IN	AAAA	2604:a880:4:1d0::24c:0
+www.textpattern.net.	1	IN	AAAA	2a03:b0c0:2:d0::13c8:a001
 
 ;; CAA Records
 textpattern.net.	1	IN	CAA	0 issuewild ";"
@@ -48,4 +48,3 @@ trapeze.textpattern.net.	1	IN	MX	10 trapeze.textpattern.net.
 
 ;; TXT Records
 tarzan.textpattern.net.	1	IN	TXT	"v=spf1 mx a ip4:164.92.219.167/32 ip6:2a03:b0c0:2:d0::13c8:a001/128 -all"
-trapeze.textpattern.net.	1	IN	TXT	"v=spf1 mx a ip4:143.198.61.81/32 ip6:2604:a880:4:1d0::24c:0/128 -all"
