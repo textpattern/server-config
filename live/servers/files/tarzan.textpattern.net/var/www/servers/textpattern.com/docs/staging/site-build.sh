@@ -14,15 +14,8 @@ rm -rf $repo_parent_dir/_github-$repo_branch \
 && ~/.rbenv/shims/bundle install \
 && ~/.rbenv/shims/gem pristine --all \
 && ~/.rbenv/shims/bundle exec jekyll build \
-&& if [ -f $repo_parent_dir/_github-$repo_branch/README.md ]; then
+&& if [ -f $repo_parent_dir/_github-$repo_branch/_site/index.html ]; then
 rm -rf $web_target_dir/ \
 && mkdir -p $web_target_dir/ \
-&& mv $repo_source_dir/_site/ $web_target_dir/ \
-&& chmod -R 775 $web_target_dir/
+&& mv $repo_source_dir/_site/* $web_target_dir/
 fi
-
-
-
-&& chown -R www-data:www-data $repo_parent_dir/_github-$repo_branch/ \
-&& chmod -R 775 $repo_parent_dir/_github-$repo_branch/ \
-&& chown -R www-data:www-data $web_target_dir/ \
