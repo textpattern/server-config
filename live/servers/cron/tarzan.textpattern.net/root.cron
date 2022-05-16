@@ -3,10 +3,10 @@
 21 6 * * * sleep 54 && /usr/bin/certbot renew --config-dir /etc/certbot/ && systemctl reload nginx
 57 22 * * * bash /usr/libexec/netdata/netdata-updater.sh && rm -f /netdata-updater.log.*
 */5 * * * * sleep 5 && bash /opt/php/8.0/php-fpm80restartifdown.sh
-0,15,30,45 * * * * bash /var/www/servers/textpattern.com/docs-test/staging/mv-perms.sh
-15,45 * * * * bash /var/www/servers/textpattern.com/plugins/staging/build.sh
-15,45 * * * * sleep 15 && bash /var/www/servers/textpattern.com/themes/staging/build.sh
-15,45 * * * * sleep 30 && bash /var/www/servers/textpattern.com/design-patterns/staging/build.sh
+0,15,30,45 * * * * bash /var/www/servers/textpattern.com/docs/staging/mv-perms.sh
+15,45 * * * * sleep 15 && bash /var/www/servers/textpattern.com/plugins/staging/build.sh
+15,45 * * * * sleep 30 && bash /var/www/servers/textpattern.com/themes/staging/build.sh
+15,45 * * * * sleep 45 && bash /var/www/servers/textpattern.com/design-patterns/staging/build.sh
 2,12,22,32,42,52 * * * * rm -f /var/www/servers/textpattern.com/forum/live/cache/*.php
 17 2 * * * /usr/local/bin/php /opt/phpbu/phpbu.phar --configuration=/var/www/servers/textpattern.org/www/backups/www.textpattern.org-phpbu-config-20-daily.xml
 18 1 * * * /usr/local/bin/php /opt/phpbu/phpbu.phar --configuration=/var/www/servers/txpmag.com/www/backups/www.txpmag.com-phpbu-config-20-daily.xml
