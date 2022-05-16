@@ -14,6 +14,6 @@ rm -rf $web_target_dir/ \
 && mkdir -p $web_target_dir/ \
 && mv $repo_source_dir/_site/* $web_target_dir/ \
 && chmod -R www-data:www-data $web_target_dir/ \
-&& chown -R 775 $web_target_dir/
+&& chown -R 775 $web_target_dir/ \
 && echo "Done."
 fi
