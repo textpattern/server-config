@@ -1,0 +1,2 @@
+10,25,40,55 * * * * bash /var/www/servers/textpattern.com/docs-test/staging/site-build.sh
+50 3 * * * bash /var/www/servers/textpattern.com/docs-test/staging/rbenv-build.sh
