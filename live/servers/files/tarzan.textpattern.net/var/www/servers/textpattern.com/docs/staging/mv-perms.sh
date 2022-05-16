@@ -12,7 +12,8 @@ if [ -f $repo_parent_dir/_github-$repo_branch/_site/index.html ]; then
 rm -rf $web_target_dir/ \
 && echo "Moving files into place..." \
 && mkdir -p $web_target_dir/ \
-&& mv $repo_source_dir/_site/* $web_target_dir/ \
+&& cp -R $repo_source_dir/_site/* $web_target_dir/_site/ \
+&& echo $(date +%s) >> $web_target_dir/_site/build.txt \
 && chown -R www-data:www-data $web_target_dir/ \
 && chmod -R 775 $web_target_dir/ \
 && echo "Done."
