@@ -1,6 +1,6 @@
 ;;
 ;; Domain:     textpattern.net.
-;; Exported:   2022-03-18 16:30:45
+;; Exported:   2023-12-02 19:32:05
 ;;
 ;; This file is intended for use for informational and archival
 ;; purposes ONLY and MUST be edited before use on a production
@@ -24,18 +24,24 @@
 ;;
 ;; Use at your own risk.
 ;; SOA Record
-textpattern.net	3600	IN	SOA	textpattern.net root.textpattern.net 2039928764 7200 3600 86400 3600
+textpattern.net	3600	IN	SOA	maria.ns.cloudflare.com. dns.cloudflare.com. 2045321212 10000 2400 604800 3600
+
+;; NS Records
+textpattern.net.	86400	IN	NS	maria.ns.cloudflare.com.
+textpattern.net.	86400	IN	NS	toby.ns.cloudflare.com.
 
 ;; A Records
 tarzan.textpattern.net.	1	IN	A	164.92.219.167
 textpattern.net.	1	IN	A	164.92.219.167
-trapeze.textpattern.net.	1	IN	A	143.198.61.81
+triton.textpattern.net.	1	IN	A	137.184.234.120
+turtle.textpattern.net.	1	IN	A	159.65.240.144
 www.textpattern.net.	1	IN	A	164.92.219.167
 
 ;; AAAA Records
 tarzan.textpattern.net.	1	IN	AAAA	2a03:b0c0:2:d0::13c8:a001
 textpattern.net.	1	IN	AAAA	2a03:b0c0:2:d0::13c8:a001
-trapeze.textpattern.net.	1	IN	AAAA	2604:a880:4:1d0::24c:0
+triton.textpattern.net.	1	IN	AAAA	2604:a880:4:1d0::10d:c000
+turtle.textpattern.net.	1	IN	AAAA	2604:a880:800:10::ba6:9001
 www.textpattern.net.	1	IN	AAAA	2a03:b0c0:2:d0::13c8:a001
 
 ;; CAA Records
@@ -44,7 +50,10 @@ textpattern.net.	1	IN	CAA	0 issue "letsencrypt.org"
 
 ;; MX Records
 tarzan.textpattern.net.	1	IN	MX	10 tarzan.textpattern.net.
-trapeze.textpattern.net.	1	IN	MX	10 trapeze.textpattern.net.
+triton.textpattern.net.	1	IN	MX	10 triton.textpattern.net.
+turtle.textpattern.net.	1	IN	MX	10 turtle.textpattern.net.
 
 ;; TXT Records
 tarzan.textpattern.net.	1	IN	TXT	"v=spf1 mx a ip4:164.92.219.167/32 ip6:2a03:b0c0:2:d0::13c8:a001/128 -all"
+triton.textpattern.net.	1	IN	TXT	"v=spf1 mx a ip4:137.184.234.120/32 ip6:2604:a880:4:1d0::10d:c000/128 -all"
+turtle.textpattern.net.	1	IN	TXT	"v=spf1 mx a ip4:159.65.240.144/32 ip6:2604:a880:800:10::ba6:9001/128 -all"
