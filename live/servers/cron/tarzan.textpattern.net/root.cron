@@ -3,15 +3,16 @@
 21 6 * * * sleep 54 && /usr/bin/certbot renew --config-dir /etc/certbot/ && systemctl reload nginx
 57 22 * * * bash /usr/libexec/netdata/netdata-updater.sh && rm -f /netdata-updater.log.*
 0,15,30,45 * * * * bash /var/www/servers/textpattern.com/docs/staging/mv-perms.sh
-15,45 * * * * sleep 15 && bash /var/www/servers/textpattern.com/plugins/staging/build.sh
-15,45 * * * * sleep 30 && bash /var/www/servers/textpattern.com/themes/staging/build.sh
-15,45 * * * * sleep 45 && bash /var/www/servers/textpattern.com/design-patterns/staging/build.sh
-2,12,22,32,42,52 * * * * rm -f /var/www/servers/textpattern.com/forum/live/cache/*.php
-17 2 * * * /usr/local/bin/php /opt/phpbu/phpbu.phar --configuration=/var/www/servers/textpattern.org/www/backups/www.textpattern.org-phpbu-config-20-daily.xml
-18 1 * * * /usr/local/bin/php /opt/phpbu/phpbu.phar --configuration=/var/www/servers/txpmag.com/www/backups/www.txpmag.com-phpbu-config-20-daily.xml
-19 1 * * * /usr/local/bin/php /opt/phpbu/phpbu.phar --configuration=/var/www/servers/textile-lang.com/www/backups/www.textile-lang.com-phpbu-config-20-daily.xml
-15 1 * * * /usr/local/bin/php /opt/phpbu/phpbu.phar --configuration=/var/www/servers/textpattern.com/www/backups/www.textpattern.com-phpbu-config-20-daily.xml
-16 3 * * * /usr/local/bin/php /opt/phpbu/phpbu.phar --configuration=/var/www/servers/textpattern.com/rpc/backups/rpc.textpattern.com-phpbu-config-20-daily.xml
-27 1 * * * /usr/local/bin/php /opt/phpbu/phpbu.phar --configuration=/var/www/servers/textpattern.com/plugins/backups/plugins.textpattern.com-phpbu-config-20-daily.xml
-22 2 * * * /usr/local/bin/php /opt/phpbu/phpbu.phar --configuration=/var/www/servers/textpattern.com/themes/backups/themes.textpattern.com-phpbu-config-20-daily.xml
-5 * * * * /usr/local/bin/php /opt/phpbu/phpbu.phar --configuration=/var/www/servers/textpattern.com/forum/backups/forum.textpattern.com-phpbu-config-10-hourly.xml
+#15,45 * * * * sleep 15 && bash /var/www/servers/textpattern.com/plugins/staging/build.sh
+#15,45 * * * * sleep 30 && bash /var/www/servers/textpattern.com/themes/staging/build.sh
+#15,45 * * * * sleep 45 && bash /var/www/servers/textpattern.com/design-patterns/staging/build.sh
+#2,12,22,32,42,52 * * * * rm -f /var/www/servers/textpattern.com/forum/live/cache/*.php
+#17 2 * * * /usr/local/bin/php /opt/phpbu/phpbu.phar --configuration=/var/www/servers/textpattern.org/www/backups/www.textpattern.org-phpbu-config-20-daily.xml
+#18 1 * * * /usr/local/bin/php /opt/phpbu/phpbu.phar --configuration=/var/www/servers/txpmag.com/www/backups/www.txpmag.com-phpbu-config-20-daily.xml
+#19 1 * * * /usr/local/bin/php /opt/phpbu/phpbu.phar --configuration=/var/www/servers/textile-lang.com/www/backups/www.textile-lang.com-phpbu-config-20-daily.xml
+#15 1 * * * /usr/local/bin/php /opt/phpbu/phpbu.phar --configuration=/var/www/servers/textpattern.com/www/backups/www.textpattern.com-phpbu-config-20-daily.xml
+#16 3 * * * /usr/local/bin/php /opt/phpbu/phpbu.phar --configuration=/var/www/servers/textpattern.com/rpc/backups/rpc.textpattern.com-phpbu-config-20-daily.xml
+#27 1 * * * /usr/local/bin/php /opt/phpbu/phpbu.phar --configuration=/var/www/servers/textpattern.com/plugins/backups/plugins.textpattern.com-phpbu-config-20-daily.xml
+#22 2 * * * /usr/local/bin/php /opt/phpbu/phpbu.phar --configuration=/var/www/servers/textpattern.com/themes/backups/themes.textpattern.com-phpbu-config-20-daily.xml
+#5 * * * * /usr/local/bin/php /opt/phpbu/phpbu.phar --configuration=/var/www/servers/textpattern.com/forum/backups/forum.textpattern.com-phpbu-config-10-hourly.xml
+*/10 * * * * sleep 20 && bash /opt/php/8.2/php-fpm82restartifdown.sh
